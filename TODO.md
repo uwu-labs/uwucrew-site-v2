@@ -1,0 +1,4 @@
+- Favicon
+- og-image
+- Title
+- Description
