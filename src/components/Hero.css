@@ -1,5 +1,13 @@
 .hero {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
-  background: red;
+  background: linear-gradient(
+    180deg,
+    #f5dce8 0%,
+    #fcfdff 8.33%,
+    #fcfdff 88.02%,
+    #f5dce8 100%
+  );
 }
