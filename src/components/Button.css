@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2.4rem;
+  background: var(--main);
+  border-radius: 2.7rem;
+  cursor: pointer;
+}
+
+.icon {
+  height: 1.8rem;
+  margin-right: 0.8rem;
+}
+
+.label {
+  color: var(--bg);
+  font-weight: 700;
+  font-size: 2rem;
+}
