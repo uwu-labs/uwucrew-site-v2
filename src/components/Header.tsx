@@ -25,7 +25,9 @@ const Header = () => {
   return (
     <div className="header">
       <div className="section">
-        <img className="logo" src={logo} alt="uwucrew logo" />
+        <a href="/">
+          <img className="logo" src={logo} alt="uwucrew logo" />
+        </a>
         <div className="nav-items">
           {navItems.map((navItem) => (
             <a className="nav-item" href={navItem.href} key={navItem.href}>
