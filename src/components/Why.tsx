@@ -1,7 +1,12 @@
+import Section from "./Section";
 import "./Why.css";
 
 const Why = () => {
-  return <div className="why">Why</div>;
+  return (
+    <Section id="why">
+      <div className="why">Why</div>
+    </Section>
+  );
 };
 
 export default Why;

@@ -1,7 +1,12 @@
 import "./Community.css";
+import Section from "./Section";
 
 const Community = () => {
-  return <div className="community">Community </div>;
+  return (
+    <Section id="community">
+      <div className="community">Community </div>
+    </Section>
+  );
 };
 
 export default Community;

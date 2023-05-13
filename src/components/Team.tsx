@@ -1,7 +1,12 @@
+import Section from "./Section";
 import "./Team.css";
 
 const Team = () => {
-  return <div className="team">Team</div>;
+  return (
+    <Section id="team">
+      <div className="team">Team</div>
+    </Section>
+  );
 };
 
 export default Team;
