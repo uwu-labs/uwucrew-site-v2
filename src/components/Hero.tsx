@@ -1,5 +1,6 @@
 import Header from "./Header";
 import "./Hero.css";
+import HeroBanners from "./HeroBanners";
 import Section from "./Section";
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
     <Section id="hero">
       <div className="hero">
         <Header />
-        meow
+        <HeroBanners />
       </div>
     </Section>
   );
