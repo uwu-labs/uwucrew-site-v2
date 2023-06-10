@@ -3,7 +3,7 @@ import "./Header.css";
 import logo from "../assets/logo.svg";
 import opensea from "../assets/socials/opensea.svg";
 import Button from "./Button";
-import { OPENSEA } from "../app/globals";
+import { OPENSEA_LINK } from "../app/globals";
 
 interface NavItemType {
   label: string;
@@ -37,7 +37,7 @@ const Header = () => {
         </div>
       </div>
       <div className="section">
-        <Button label="Buy on OpenSea" link={OPENSEA} icon={opensea} />
+        <Button label="Buy on OpenSea" link={OPENSEA_LINK} icon={opensea} />
       </div>
     </div>
   );
