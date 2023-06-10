@@ -25,7 +25,11 @@ const HeroBanners = () => {
           const index = (startIndex + 1) % uwus.length;
           const uwu = uwus[index];
           return (
-            <div className="uwu-container" style={{ background: uwu.color }}>
+            <div
+              className="uwu-container"
+              style={{ background: uwu.color }}
+              key={i}
+            >
               <img src={uwu.image} alt="uwu" className="uwu" />
             </div>
           );
@@ -37,7 +41,11 @@ const HeroBanners = () => {
           const index = (startIndex + 1) % uwus.length;
           const uwu = uwus[index];
           return (
-            <div className="uwu-container" style={{ background: uwu.color }}>
+            <div
+              className="uwu-container"
+              style={{ background: uwu.color }}
+              key={i}
+            >
               <img src={uwu.image} alt="uwu" className="uwu" />
             </div>
           );
