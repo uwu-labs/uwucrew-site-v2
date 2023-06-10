@@ -15,7 +15,7 @@ const Button = ({ label, action, icon, link }: Props) => {
     </>
   );
   return (
-    <>
+    <div className="button-container">
       {action && (
         <button className="button" onClick={action}>
           {content}
@@ -26,7 +26,7 @@ const Button = ({ label, action, icon, link }: Props) => {
           {content}
         </a>
       )}
-    </>
+    </div>
   );
 };
 

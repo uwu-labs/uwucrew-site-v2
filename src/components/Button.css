@@ -1,3 +1,7 @@
+.button-container {
+  display: flex;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -5,6 +9,7 @@
   background: var(--main);
   border-radius: 2.7rem;
   cursor: pointer;
+  width: auto;
 }
 
 .icon {
