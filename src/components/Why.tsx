@@ -1,53 +1,23 @@
 import "./Why.css";
 
 import Section from "./Section";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
 import uwu1 from "../assets/why/01.jpg";
 import uwu2 from "../assets/why/02.jpg";
 import uwu3 from "../assets/why/01.jpg";
-import uwu4 from "../assets/why/02.jpg";
+import useFixedStyles from "../hooks/use-scroll-data";
 
 const images = [uwu1, uwu2, uwu3];
 
 const Why = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [location, setLocation] = useState<"above" | "in" | "below">("above");
-  const [image, setImage] = useState(0);
+  const { fixedStyles, percentScrolled } = useFixedStyles(containerRef);
 
-  const onScroll = () => {
-    if (!containerRef.current) return false;
-
-    // Handling the state of the fixed element
-    const rect = containerRef.current.getBoundingClientRect();
-    if (rect.top > 0) setLocation("above");
-    else if (rect.top <= 0 && rect.bottom >= window.innerHeight)
-      setLocation("in");
-    else setLocation("below");
-
-    // Handlin the changing of the image
-    const percentScrolled = Math.min(
-      Math.max((rect.top * -1) / window.innerHeight, 0),
-      1
-    );
-    const image = Math.min(
-      Math.floor(percentScrolled * images.length),
-      images.length - 1
-    );
-    setImage(image);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const fixedStyles = {
-    position: (location === "in" ? "fixed" : "absolute") as any,
-    top: location !== "below" ? "0" : "auto",
-    bottom: location === "below" ? "0" : "auto",
-  };
+  const image = Math.min(
+    Math.floor(percentScrolled * images.length),
+    images.length - 1
+  );
 
   return (
     <Section id="why">
