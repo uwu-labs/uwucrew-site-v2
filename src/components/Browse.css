@@ -1,5 +1,37 @@
 .browse {
   width: 100%;
+  height: 300vh;
+  background: teal;
+  position: relative;
+}
+
+.browse-content {
+  width: 100%;
   height: 100vh;
-  background: yellow;
+  display: absolute;
+  top: 0;
+  left: 0;
+  background: pink;
+  background: linear-gradient(
+      209.82deg,
+      #f6c3d9 -5.27%,
+      #f4f5f6 53.63%,
+      #f4f5f6 53.64%
+    ),
+    linear-gradient(0deg, #ffffff, #ffffff);
+  padding: 4.8rem 8rem;
+  display: flex;
+  align-items: left;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.browse-header {
+  color: var(--main);
+  font-size: 8.8rem;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: -0.088rem;
+  margin-bottom: 2.4rem;
+  max-width: 81.4rem;
 }
