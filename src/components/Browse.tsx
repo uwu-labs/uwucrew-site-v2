@@ -11,7 +11,6 @@ import uwu4 from "../assets/browse/4.png";
 import uwu5 from "../assets/browse/5.png";
 import uwu6 from "../assets/browse/6.png";
 import uwu7 from "../assets/browse/7.png";
-import uwu8 from "../assets/browse/8.png";
 
 interface UwuType {
   src: string;
@@ -23,60 +22,53 @@ interface UwuType {
 
 const uwus: UwuType[] = [
   {
+    src: uwu2,
+    width: 25,
+    speed: 0.35,
+    left: -5,
+    top: 130,
+  },
+  {
     src: uwu1,
     width: 25,
-    speed: 0.25,
-    left: 8,
-    top: 10,
-  },
-  {
-    src: uwu2,
-    width: 10,
-    speed: 0.1,
-    left: 20,
-    top: 20,
-  },
-  {
-    src: uwu3,
-    width: 15,
-    speed: 0.15,
-    left: 50,
-    top: 30,
-  },
-  {
-    src: uwu4,
-    width: 20,
-    speed: 0.2,
-    left: 80,
-    top: 40,
-  },
-  {
-    src: uwu5,
-    width: 10,
-    speed: 0.8,
-    left: 90,
-    top: 50,
+    speed: 0.35,
+    left: 3,
+    top: -5,
   },
   {
     src: uwu6,
     width: 15,
-    speed: 0.15,
-    left: 10,
+    speed: 0.6,
+    left: 25,
+    top: 110,
+  },
+  {
+    src: uwu3,
+    width: 18,
+    speed: 0.2,
+    left: 50,
+    top: 40,
+  },
+  {
+    src: uwu4,
+    width: 20,
+    speed: 0.35,
+    left: 78,
     top: 60,
   },
   {
-    src: uwu7,
-    width: 20,
-    speed: 0.2,
-    left: 30,
-    top: 70,
+    src: uwu5,
+    width: 10,
+    speed: 0.7,
+    left: 75,
+    top: 15,
   },
   {
-    src: uwu8,
-    width: 10,
-    speed: 0.8,
-    left: 70,
-    top: 80,
+    src: uwu7,
+    width: 15,
+    speed: 0.6,
+    left: 75,
+    top: 180,
   },
 ];
 
@@ -98,8 +90,7 @@ const Browse = () => {
             uwus.map((uwu, index) => {
               const { src, width, speed, left, top } = uwu;
               const zIndex = speed > 0.5 ? 3 : 1;
-              if (containerRef.current === null) return null;
-              const windowHeight = containerRef.current.clientHeight;
+              const windowHeight = containerRef.current?.clientHeight || 0;
               const translateY = percentScrolled * speed * windowHeight;
               const style = {
                 width: `${width}%`,
