@@ -1,6 +1,6 @@
 .browse {
   width: 100%;
-  height: 300vh;
+  height: 200vh;
   background: teal;
   position: relative;
 }
@@ -26,6 +26,14 @@
   flex-direction: column;
 }
 
+.browse-content > div {
+  z-index: 2;
+}
+
+.browse-content > h2 {
+  z-index: 2;
+}
+
 .browse-header {
   color: var(--main);
   font-size: 8.8rem;
@@ -34,4 +42,8 @@
   letter-spacing: -0.088rem;
   margin-bottom: 2.4rem;
   max-width: 81.4rem;
+}
+
+.browse-image {
+  position: absolute;
 }
