@@ -5,24 +5,27 @@ interface Props {
   link?: string;
   label: string;
   icon?: string;
+  primary?: boolean;
 }
 
-const Button = ({ label, action, icon, link }: Props) => {
+const Button = ({ label, action, icon, link, primary }: Props) => {
   const content = (
     <>
       {icon && <img className="icon" src={icon} alt={label} />}
       <div className="label">{label}</div>
     </>
   );
+
+  const className = `button${primary ? " primary" : ""}`;
   return (
     <div className="button-container">
       {action && (
-        <button className="button" onClick={action}>
+        <button className={className} onClick={action}>
           {content}
         </button>
       )}
       {link && (
-        <a className="button" href={link} target="_blank" rel="noreferrer">
+        <a className={className} href={link} target="_blank" rel="noreferrer">
           {content}
         </a>
       )}

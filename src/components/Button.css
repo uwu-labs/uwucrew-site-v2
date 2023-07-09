@@ -12,6 +12,10 @@
   width: auto;
 }
 
+.primary {
+  background: var(--primary);
+}
+
 .icon {
   height: 1.8rem;
   margin-right: 0.8rem;
@@ -21,4 +25,8 @@
   color: var(--bg);
   font-weight: 700;
   font-size: 2rem;
+}
+
+.primary .label {
+  color: var(--main);
 }
