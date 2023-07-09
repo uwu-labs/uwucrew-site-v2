@@ -1,5 +1,72 @@
 .blog {
   width: 100%;
-  height: 100vh;
-  background: grey;
+  background: #141414;
+  padding: 13rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-header {
+  color: var(--primary);
+  font-size: 6.4rem;
+  font-weight: 800;
+  margin-bottom: 6.5rem;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(41rem, 1fr));
+  grid-column-gap: 2.3rem;
+  grid-row-gap: 7.2rem;
+  width: 100%;
+  max-width: 130rem;
+  margin-bottom: 6.4rem;
+}
+
+.blog-post {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  border-radius: 2.4rem;
+}
+
+.blog-post-image {
+  width: 100%;
+}
+
+.blog-post-content {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #1d1f22;
+  flex: 1;
+}
+
+.blog-post-content-date {
+  background: #0f0f0f;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post-content-header {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 135%;
+  margin-bottom: 2.4rem;
+}
+
+.blog-post-content-description {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 140%;
 }
