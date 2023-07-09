@@ -16,7 +16,7 @@
 
 .team-members {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 9rem;
   width: 100%;
