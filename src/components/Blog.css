@@ -16,7 +16,7 @@
 
 .blog-posts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(41rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
   grid-column-gap: 2.3rem;
   grid-row-gap: 7.2rem;
   width: 100%;
