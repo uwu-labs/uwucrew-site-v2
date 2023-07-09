@@ -24,6 +24,7 @@
   align-items: left;
   justify-content: flex-end;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .browse-content > div {
