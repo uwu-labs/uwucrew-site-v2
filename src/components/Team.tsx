@@ -7,7 +7,7 @@ import morello from "../assets/team/morello.png";
 import chase from "../assets/team/chase.png";
 import omar from "../assets/team/omar.png";
 import danny from "../assets/team/danny.png";
-import spori from "../assets/team/spori.png";
+import nines from "../assets/team/nines.png";
 import jules from "../assets/team/jules.png";
 
 import twitter from "../assets/socials/team/twitter.svg";
@@ -67,10 +67,10 @@ const members: TeamMemberType[] = [
     github: "https://github.com/chase-manning",
   },
   {
-    name: "Spori",
-    role: "Full Stack Dev",
-    image: spori,
-    twitter: "https://twitter.com/0xSpori",
+    name: "Nines",
+    role: "2D & 3D Designer",
+    image: nines,
+    twitter: "https://twitter.com/nine__s",
   },
 ];
 
