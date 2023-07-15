@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 import uwu1 from "../assets/why/01.jpg";
 import uwu2 from "../assets/why/02.jpg";
-import uwu3 from "../assets/why/01.jpg";
+import uwu3 from "../assets/why/03.jpg";
 import useFixedStyles from "../hooks/use-scroll-data";
 
 const images = [uwu1, uwu2, uwu3];
