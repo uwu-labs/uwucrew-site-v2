@@ -4,16 +4,10 @@ import Section from "./Section";
 import useFixedStyles from "../hooks/use-scroll-data";
 import Button from "./Button";
 
-import uwu1 from "../assets/browse/1.png";
-import uwu2 from "../assets/browse/2.png";
-import uwu3 from "../assets/browse/3.png";
-import uwu4 from "../assets/browse/4.png";
-import uwu5 from "../assets/browse/5.png";
-import uwu6 from "../assets/browse/6.png";
-import uwu7 from "../assets/browse/7.png";
+const UWU_OPTIONS = 51;
+const OFFSET = Math.round(Math.random() * UWU_OPTIONS);
 
 interface UwuType {
-  src: string;
   width: number; // Percentage of screen width
   speed: number; // Percentage of scroll speed
   left: number; // Percentage of screen width
@@ -22,49 +16,42 @@ interface UwuType {
 
 const uwus: UwuType[] = [
   {
-    src: uwu2,
     width: 25,
     speed: 0.35,
     left: -5,
     top: 130,
   },
   {
-    src: uwu1,
     width: 25,
     speed: 0.35,
     left: 3,
     top: -5,
   },
   {
-    src: uwu6,
     width: 15,
     speed: 0.6,
     left: 25,
     top: 110,
   },
   {
-    src: uwu3,
     width: 18,
     speed: 0.2,
     left: 50,
     top: 40,
   },
   {
-    src: uwu4,
     width: 20,
     speed: 0.35,
     left: 78,
     top: 60,
   },
   {
-    src: uwu5,
     width: 10,
     speed: 0.7,
     left: 75,
     top: 15,
   },
   {
-    src: uwu7,
     width: 15,
     speed: 0.6,
     left: 75,
@@ -88,7 +75,7 @@ const Browse = () => {
           {
             // Render uwus
             uwus.map((uwu, index) => {
-              const { src, width, speed, left, top } = uwu;
+              const { width, speed, left, top } = uwu;
               const zIndex = speed > 0.5 ? 3 : 1;
               const windowHeight = containerRef.current?.clientHeight || 0;
               const translateY = percentScrolled * speed * windowHeight;
@@ -99,11 +86,14 @@ const Browse = () => {
                 transform: `translateY(${-translateY}px)`,
                 zIndex,
               };
+              const image = `/assets/browse/${
+                ((index + OFFSET) % UWU_OPTIONS) + 1
+              }.jpg`;
               return (
                 <img
                   key={index}
                   className="browse-image"
-                  src={src}
+                  src={image}
                   alt="uwu"
                   style={style}
                 />
