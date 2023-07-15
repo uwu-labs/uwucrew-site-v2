@@ -21,27 +21,62 @@ import twitter from "../assets/socials/footer/twitter.svg";
 
 import whiteDiscord from "../assets/socials/discord.svg";
 
-import uwu01 from "../assets/community/01.png";
-import uwu02 from "../assets/community/02.png";
-import uwu03 from "../assets/community/03.png";
-import uwu04 from "../assets/community/04.png";
-import uwu05 from "../assets/community/05.png";
-import uwu06 from "../assets/community/06.png";
-import uwu07 from "../assets/community/07.png";
-import uwu08 from "../assets/community/08.png";
-import uwu09 from "../assets/community/09.png";
-import uwu10 from "../assets/community/10.png";
-import uwu11 from "../assets/community/11.png";
-import uwu12 from "../assets/community/12.png";
-import uwu13 from "../assets/community/13.png";
-import uwu14 from "../assets/community/14.png";
-import uwu15 from "../assets/community/15.png";
-import uwu16 from "../assets/community/16.png";
 import { useEffect, useState } from "react";
 
+const imageOptions = [
+  "./Rho.png",
+  "./Naninna.avif",
+  "./Alice.avif",
+  "./Alice.jpg",
+  "./farah.png",
+  "./Farah.avif",
+  "./Liga.avif",
+  "./Vanaric.avif",
+  "./Fei.avif",
+  "./Tuwu.avif",
+  "./Touge.avif",
+  "./Josh (1).jpg",
+  "./JG.avif",
+  "./Vixpora.jpg",
+  "./Imp.avif",
+  "./Adam.avif",
+  "./Liga.jpg",
+  "./Touge.png",
+  "./Shin (1).avif",
+  "./Palis.png",
+  "./Imp.jpg",
+  "./JG.png",
+  "./Nate.avif",
+  "./Suhate.jpg",
+  "./Neetori.jpeg",
+  "./Tuwu.jpg",
+  "./Cloudy.jpg",
+  "./Vanaric.png",
+  "./Fei.jpg",
+  "./Vixpora.avif",
+  "./Pawwao.png",
+  "./Adam.png",
+  "./Nate.jpg",
+  "./Rho.avif",
+  "./Naninna.jpg",
+  "./Shiomu.avif",
+  "./Pawwao.avif",
+  "./Josh.jpg",
+  "./Jess (1).jpg",
+  "./shiomu.png",
+  "./stuwu.avif",
+  "./Suhate.avif",
+  "./stuwu.png",
+  "./Jess.jpg",
+  "./Cloudy.avif",
+  "./Benangbaja.avif",
+  "./Benanbaja.jpg",
+  "./Shin.avif",
+  "./Palis.avif",
+  "./Neetori.avif",
+];
+
 interface UwuType {
-  leftImage: string;
-  rightImage: string;
   top: number; // Percentage of height (e.g 0.1 = 10%)
   side: number; // Percentage of height as left or right distance (e.g 0.1 = 10%)
   size: number; // Percentage of height as container (e.g 0.1 = 10%)
@@ -49,57 +84,41 @@ interface UwuType {
 
 const uwus: UwuType[] = [
   {
-    leftImage: uwu01,
-    rightImage: uwu02,
     top: 0.1,
     side: 0.12,
     size: 0.1,
   },
   {
-    leftImage: uwu03,
-    rightImage: uwu04,
     top: 0.18,
     side: -0.05,
     size: 0.13,
   },
   {
-    leftImage: uwu05,
-    rightImage: uwu06,
     top: 0.25,
     side: 0.15,
     size: 0.12,
   },
   {
-    leftImage: uwu07,
-    rightImage: uwu08,
     top: 0.4,
     side: -0.05,
     size: 0.27,
   },
   {
-    leftImage: uwu09,
-    rightImage: uwu10,
     top: 0.5,
     side: 0.35,
     size: 0.1,
   },
   {
-    leftImage: uwu11,
-    rightImage: uwu12,
     top: 0.65,
     side: 0.2,
     size: 0.18,
   },
   {
-    leftImage: uwu13,
-    rightImage: uwu14,
     top: 0.75,
     side: 0.5,
     size: 0.1,
   },
   {
-    leftImage: uwu15,
-    rightImage: uwu16,
     top: 0.8,
     side: 0.05,
     size: 0.1,
@@ -190,7 +209,9 @@ const Community = () => {
                   height: `${uwu.size * 100}vh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
-                src={uwu.rightImage}
+                src={`/assets/community/${
+                  imageOptions[Math.floor(Math.random() * imageOptions.length)]
+                }`}
                 alt="uwu"
               />
               <img
@@ -203,7 +224,9 @@ const Community = () => {
                   height: `${uwu.size * 100}vh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
-                src={uwu.rightImage}
+                src={`/assets/community/${
+                  imageOptions[Math.floor(Math.random() * imageOptions.length)]
+                }`}
                 alt="uwu"
               />
             </>
