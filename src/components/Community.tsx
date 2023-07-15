@@ -37,6 +37,7 @@ import uwu13 from "../assets/community/13.png";
 import uwu14 from "../assets/community/14.png";
 import uwu15 from "../assets/community/15.png";
 import uwu16 from "../assets/community/16.png";
+import { useEffect, useState } from "react";
 
 interface UwuType {
   leftImage: string;
@@ -145,6 +146,25 @@ const socials: SocialType[] = [
 ];
 
 const Community = () => {
+  const [atBottom, setAtBottom] = useState(false);
+
+  // set window listener to check if at bottom
+  useEffect(() => {
+    // set at bottom if at bottom
+    const handleScroll = () => {
+      if (
+        window.innerHeight + window.scrollY >=
+        document.body.offsetHeight - 2
+      ) {
+        setAtBottom(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <Section id="community">
       <div className="community">
@@ -154,35 +174,41 @@ const Community = () => {
         <div className="community-top-glow" />
 
         {/* uwus */}
-        {uwus.map((uwu) => (
-          <img
-            key={uwu.leftImage}
-            className="community-uwu"
-            style={{
-              top: `${uwu.top * 100}vh`,
-              left: `${uwu.side * 100}vh`,
-              width: `${uwu.size * 100}vh`,
-              height: `${uwu.size * 100}vh`,
-            }}
-            src={uwu.rightImage}
-            alt="uwu"
-          />
-        ))}
-
-        {uwus.map((uwu) => (
-          <img
-            key={uwu.leftImage}
-            className="community-uwu"
-            style={{
-              top: `${uwu.top * 100}vh`,
-              right: `${uwu.side * 100}vh`,
-              width: `${uwu.size * 100}vh`,
-              height: `${uwu.size * 100}vh`,
-            }}
-            src={uwu.rightImage}
-            alt="uwu"
-          />
-        ))}
+        {uwus.map((uwu, index) => {
+          const className = `community-uwu ${
+            atBottom ? "community-animated" : ""
+          }`;
+          return (
+            <>
+              <img
+                key={index}
+                className={className}
+                style={{
+                  top: `${uwu.top * 100}vh`,
+                  left: `${uwu.side * 100}vh`,
+                  width: `${uwu.size * 100}vh`,
+                  height: `${uwu.size * 100}vh`,
+                  animationDelay: `${Math.random() * 1}s`,
+                }}
+                src={uwu.rightImage}
+                alt="uwu"
+              />
+              <img
+                key={index}
+                className={className}
+                style={{
+                  top: `${uwu.top * 100}vh`,
+                  right: `${uwu.side * 100}vh`,
+                  width: `${uwu.size * 100}vh`,
+                  height: `${uwu.size * 100}vh`,
+                  animationDelay: `${Math.random() * 1}s`,
+                }}
+                src={uwu.rightImage}
+                alt="uwu"
+              />
+            </>
+          );
+        })}
 
         {/* Content */}
         <div />
