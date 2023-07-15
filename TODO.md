@@ -3,3 +3,8 @@
 - Title
 - Description
 - 404 Page
+- Update all images
+- Add up to 12 for the browse page
+- Add alternate art for team
+- Add scrolling to home page
+- Mobile
