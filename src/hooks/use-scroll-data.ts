@@ -7,13 +7,16 @@ const useScrollData = (containerRef: MutableRefObject<HTMLDivElement>) => {
   const onScroll = () => {
     if (!containerRef || !containerRef.current) return false;
     const rect = containerRef.current.getBoundingClientRect();
-    if (rect.top > 0) setLocation("above");
+    let location_;
+    if (rect.top > 0) location_ = "above";
     else if (rect.top <= 0 && rect.bottom >= window.innerHeight)
-      setLocation("in");
-    else setLocation("below");
+      location_ = "in";
+    else location_ = "below";
+    setLocation(location_);
 
+    const areaHeight = rect.height - window.innerHeight;
     const percentScrolled_ = Math.min(
-      Math.max((rect.top * -1) / window.innerHeight, 0),
+      Math.max((rect.top * -1) / areaHeight, 0),
       1
     );
     setPercentScrolled(percentScrolled_);
