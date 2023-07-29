@@ -1,5 +1,3 @@
-- Add custom images for home page
-- Add scrolling to home page
 - Mobile
 - Fix scale issues for Community page
 - Remove duplicates from Community page

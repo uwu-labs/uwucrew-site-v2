@@ -2,15 +2,50 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 4.5rem;
-  overflow: hidden;
+  padding-top: 4.5rem;
+  overflow-x: hidden;
 }
 
-.banner {
-  width: calc((24rem + 2.4rem) * 7);
+@keyframes slide-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.banner-top {
+  width: calc((24rem + 2.4rem) * 40);
   display: flex;
   margin-bottom: 2.4rem;
-  overflow: hidden;
+
+  animation: slide-right 45s linear infinite;
+}
+
+.banner-top:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.banner-bottom {
+  width: calc((24rem + 2.4rem) * 40);
+  display: flex;
+  margin-bottom: 2.4rem;
+
+  animation: slide-left 45s linear infinite;
+}
+
+.banner-bottom:hover {
+  animation-play-state: paused;
 }
 
 .uwu-container {
@@ -19,6 +54,14 @@
   margin: 0 1.2rem;
   overflow: hidden;
   border-radius: 2.4rem;
+
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.uwu-container:hover {
+  transform: scale(1.2);
+  z-index: 10;
 }
 
 .uwu {
