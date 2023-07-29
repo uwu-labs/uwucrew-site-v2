@@ -1,2 +1,1 @@
-- Hamburger menu
 - Add all derivatives for team
