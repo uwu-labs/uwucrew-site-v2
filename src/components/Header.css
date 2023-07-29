@@ -45,3 +45,58 @@
     display: none;
   }
 }
+
+.header-hamburger {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.header-hamburger-icon {
+  height: 3.2rem;
+}
+
+.header-drop-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 7rem);
+  background: rgba(28, 31, 34, 0.8);
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.header-hamburger-menu {
+  z-index: 2;
+  position: absolute;
+  top: 6.6rem;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, #fcfdff 0%, #f5dce8 100%);
+  z-index: 2;
+  padding: 2.4rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-hamburger-menu-item {
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+}
+
+.header-hamburger-button-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.4rem 0;
+}
