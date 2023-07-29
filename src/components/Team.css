@@ -30,10 +30,30 @@
   align-items: flex-start;
 }
 
-.team-member-image {
+.team-member-image-container {
+  position: relative;
   width: 100%;
   border-radius: 2.4rem;
+  overflow: hidden;
   margin-bottom: 1.5rem;
+}
+
+.team-member-image {
+  width: 100%;
+}
+
+.team-member-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 2.4rem;
+}
+
+.team-member-image-overlay:hover {
+  opacity: 1;
 }
 
 .team-member-name {

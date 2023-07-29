@@ -10,6 +10,15 @@ import danny from "../assets/team/danny.png";
 import nines from "../assets/team/nines.png";
 import jules from "../assets/team/jules.png";
 
+import laurDeriv from "../assets/team/derivatives/danny.png";
+import kiwiDeriv from "../assets/team/derivatives/kiwi.jpg";
+import morelloDeriv from "../assets/team/derivatives/morello.png";
+import chaseDeriv from "../assets/team/derivatives/danny.png";
+import omarDeriv from "../assets/team/derivatives/omar.png";
+import dannyDeriv from "../assets/team/derivatives/danny.png";
+import ninesDeriv from "../assets/team/derivatives/danny.png";
+import julesDeriv from "../assets/team/derivatives/jules.png";
+
 import twitter from "../assets/socials/team/twitter.svg";
 import github from "../assets/socials/team/github.svg";
 
@@ -17,6 +26,7 @@ interface TeamMemberType {
   name: string;
   image: string;
   role: string;
+  deriv: string;
   twitter?: string;
   github?: string;
 }
@@ -27,6 +37,7 @@ const members: TeamMemberType[] = [
     role: "Co-Founder & Artist",
     image: laur,
     twitter: "https://twitter.com/fungibleartist",
+    deriv: laurDeriv,
   },
   {
     name: "Kiwi",
@@ -34,30 +45,35 @@ const members: TeamMemberType[] = [
     image: kiwi,
     twitter: "https://twitter.com/0xKiwi_",
     github: "https://github.com/0xKiwi",
+    deriv: kiwiDeriv,
   },
   {
     name: "Morello",
     role: "Bit of everything",
     image: morello,
     twitter: "https://twitter.com/morellostorment",
+    deriv: morelloDeriv,
   },
   {
     name: "Omar",
     role: "Community Manager",
     image: omar,
     twitter: "https://twitter.com/OmarIbisa",
+    deriv: omarDeriv,
   },
   {
     name: "Danny",
     role: "Partnerships Manager",
     image: danny,
     twitter: "https://twitter.com/0xMaple",
+    deriv: dannyDeriv,
   },
   {
     name: "Jules",
     role: "Creative assistant",
     image: jules,
     twitter: "https://twitter.com/0xMaple",
+    deriv: julesDeriv,
   },
   {
     name: "Chase",
@@ -65,12 +81,14 @@ const members: TeamMemberType[] = [
     image: chase,
     twitter: "https://twitter.com/chase_manning_",
     github: "https://github.com/chase-manning",
+    deriv: chaseDeriv,
   },
   {
     name: "Nines",
     role: "2D & 3D Designer",
     image: nines,
     twitter: "https://twitter.com/nine__s",
+    deriv: ninesDeriv,
   },
 ];
 
@@ -83,11 +101,18 @@ const Team = () => {
           {members.map((member, index) => {
             return (
               <div className="team-member" key={index}>
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="team-member-image"
-                />
+                <div className="team-member-image-container">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="team-member-image"
+                  />
+                  <img
+                    src={member.deriv}
+                    alt={member.name}
+                    className="team-member-image-overlay"
+                  />
+                </div>
                 <h3 className="team-member-name">{member.name}</h3>
                 <h4 className="team-member-title">{member.role}</h4>
                 <div className="team-member-socials">

@@ -1,5 +1,4 @@
-- Update all images
-- Add alternate art for team
+- Add custom images for home page
 - Add scrolling to home page
 - Mobile
 - Fix scale issues for Community page
