@@ -194,12 +194,12 @@ const Community = () => {
 
         {/* uwus */}
         {uwus.map((uwu, index) => {
-          const className = `community-uwu ${
+          const className = `community-uwu-container ${
             atBottom ? "community-animated" : ""
           }`;
           return (
             <>
-              <img
+              <div
                 key={index}
                 className={className}
                 style={{
@@ -209,12 +209,18 @@ const Community = () => {
                   height: `${uwu.size * 100}vh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
-                src={`/assets/community/${
-                  imageOptions[Math.floor(Math.random() * imageOptions.length)]
-                }`}
-                alt="uwu"
-              />
-              <img
+              >
+                <img
+                  className="community-uwu"
+                  src={`/assets/community/${
+                    imageOptions[
+                      Math.floor(Math.random() * imageOptions.length)
+                    ]
+                  }`}
+                  alt="uwu"
+                />
+              </div>
+              <div
                 key={index}
                 className={className}
                 style={{
@@ -224,11 +230,17 @@ const Community = () => {
                   height: `${uwu.size * 100}vh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
-                src={`/assets/community/${
-                  imageOptions[Math.floor(Math.random() * imageOptions.length)]
-                }`}
-                alt="uwu"
-              />
+              >
+                <img
+                  className="community-uwu"
+                  src={`/assets/community/${
+                    imageOptions[
+                      Math.floor(Math.random() * imageOptions.length)
+                    ]
+                  }`}
+                  alt="uwu"
+                />
+              </div>
             </>
           );
         })}

@@ -1,3 +1,3 @@
-- Mobile
-- Fix scale issues for Community page
 - Remove duplicates from Community page
+- Mobile
+- Add all derivatives for team
