@@ -114,13 +114,13 @@ const Browse = () => {
                 ((index + OFFSET) % UWU_OPTIONS) + 1
               }.jpg`;
               return (
-                <img
+                <div
                   key={index}
-                  className="browse-image"
-                  src={image}
-                  alt="uwu"
+                  className="browse-image-container"
                   style={style}
-                />
+                >
+                  <img className="browse-image" src={image} alt="uwu" />
+                </div>
               );
             })
           }

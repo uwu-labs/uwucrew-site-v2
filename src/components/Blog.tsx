@@ -89,8 +89,8 @@ const Blog = () => {
                 >
                   <img src={image} alt={title} className="blog-post-image" />
                   <div className="blog-post-content">
-                    <h3 className="blog-post-content-date">{date}</h3>
-                    <h3 className="blog-post-content-title">{title}</h3>
+                    <div className="blog-post-content-date">{date}</div>
+                    <h3 className="blog-post-content-header">{title}</h3>
                     <p className="blog-post-content-description">
                       {description}
                     </p>

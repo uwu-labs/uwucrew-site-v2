@@ -125,6 +125,29 @@ const uwus: UwuType[] = [
   },
 ];
 
+const mobileUwus: UwuType[] = [
+  {
+    top: 0.45,
+    side: -0.05,
+    size: 0.13,
+  },
+  {
+    top: 0.55,
+    side: 0.1,
+    size: 0.07,
+  },
+  {
+    top: 0.63,
+    side: 0.02,
+    size: 0.06,
+  },
+  {
+    top: 0.71,
+    side: 0.067,
+    size: 0.07,
+  },
+];
+
 interface SocialType {
   name: string;
   link: string;
@@ -194,9 +217,58 @@ const Community = () => {
         <div className="community-right-glow" />
         <div className="community-top-glow" />
 
-        {/* uwus */}
+        {/* Desktop uwus */}
         {uwus.map((uwu, index) => {
-          const className = `community-uwu-container ${
+          const className = `community-desktop-uwu-container ${
+            atBottom ? "community-animated" : ""
+          }`;
+
+          const firstIndex = (startIndex + index * 2) % imageOptions.length;
+          const secondIndex =
+            (startIndex + index * 2 + 1) % imageOptions.length;
+          return (
+            <>
+              <div
+                key={firstIndex}
+                className={className}
+                style={{
+                  top: `${uwu.top * 100}vh`,
+                  left: `${uwu.side * 100}vh`,
+                  width: `${uwu.size * 100}vh`,
+                  height: `${uwu.size * 100}vh`,
+                  animationDelay: `${Math.random() * 1}s`,
+                }}
+              >
+                <img
+                  className="community-uwu"
+                  src={`/assets/community/${imageOptions[firstIndex]}`}
+                  alt="uwu"
+                />
+              </div>
+              <div
+                key={secondIndex}
+                className={className}
+                style={{
+                  top: `${uwu.top * 100}vh`,
+                  right: `${uwu.side * 100}vh`,
+                  width: `${uwu.size * 100}vh`,
+                  height: `${uwu.size * 100}vh`,
+                  animationDelay: `${Math.random() * 1}s`,
+                }}
+              >
+                <img
+                  className="community-uwu"
+                  src={`/assets/community/${imageOptions[secondIndex]}`}
+                  alt="uwu"
+                />
+              </div>
+            </>
+          );
+        })}
+
+        {/* Mobile uwus */}
+        {mobileUwus.map((uwu, index) => {
+          const className = `community-mobile-uwu-container ${
             atBottom ? "community-animated" : ""
           }`;
 
@@ -244,7 +316,7 @@ const Community = () => {
         })}
 
         {/* Content */}
-        <div />
+        <div className="community-top-buffer" />
         <div className="community-content">
           <img
             src={logo}

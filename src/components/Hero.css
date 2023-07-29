@@ -10,4 +10,8 @@
     #fcfdff 88.02%,
     #f5dce8 100%
   );
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 }

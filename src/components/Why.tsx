@@ -30,16 +30,19 @@ const Why = () => {
         </div>
         <div className="why-content">
           <h1 className="why-header">Why uwucrew</h1>
+          <img className="why-image" src={uwu1} alt="uwu" />
           <h2 className="why-sub-header">Discover a world of creativity</h2>
           <p className="why-text">
             Unlock a vibrant and artistic world and get to know the 250+ artists
             in the uwu community!
           </p>
+          <img className="why-image" src={uwu2} alt="uwu" />
           <h2 className="why-sub-header">Join the anime art movement</h2>
           <p className="why-text">
             Join a movement to highlight creativity and make a lasting impact on
             anime art by discovering and connecting with artists!
           </p>
+          <img className="why-image" src={uwu3} alt="uwu" />
           <h2 className="why-sub-header">Become a member of the uwuminati</h2>
           <p className="why-text">
             Gain access to the uwuminati holder-only chat and form meaningful

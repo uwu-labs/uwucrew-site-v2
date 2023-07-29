@@ -36,7 +36,7 @@ const Header = () => {
           ))}
         </div>
       </div>
-      <div className="section">
+      <div className="header-buy-on-opensea">
         <Button label="Buy on OpenSea" link={OPENSEA_LINK} icon={opensea} />
       </div>
     </div>

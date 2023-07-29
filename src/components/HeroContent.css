@@ -12,6 +12,12 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 0 2.4rem;
+    margin-top: 2rem;
+  }
 }
 
 .hero-column {
@@ -25,11 +31,21 @@
   font-weight: 700;
   line-height: 4.2rem;
   max-width: 41.6rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .socials-container {
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .hero-content-text {
