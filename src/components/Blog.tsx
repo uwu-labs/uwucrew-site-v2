@@ -80,7 +80,13 @@ const Blog = () => {
             blogPosts.map((post, index) => {
               const { image, date, title, description, mirrorId } = post;
               return (
-                <div className="blog-post" key={index}>
+                <a
+                  className="blog-post"
+                  key={index}
+                  href={`${MIRROR_LINK}${mirrorId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={image} alt={title} className="blog-post-image" />
                   <div className="blog-post-content">
                     <h3 className="blog-post-content-date">{date}</h3>
@@ -89,7 +95,7 @@ const Blog = () => {
                       {description}
                     </p>
                   </div>
-                </div>
+                </a>
               );
             })
           }
