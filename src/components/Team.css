@@ -40,6 +40,7 @@
 
 .team-member-image {
   width: 100%;
+  min-height: 100%;
 }
 
 .team-member-image-overlay {
@@ -47,6 +48,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  min-height: 100%;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: 2.4rem;
