@@ -1,3 +1,2 @@
-- Remove duplicates from Community page
 - Mobile
 - Add all derivatives for team

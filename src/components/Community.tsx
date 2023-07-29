@@ -206,7 +206,7 @@ const Community = () => {
           return (
             <>
               <div
-                key={index}
+                key={firstIndex}
                 className={className}
                 style={{
                   top: `${uwu.top * 100}vh`,
@@ -223,7 +223,7 @@ const Community = () => {
                 />
               </div>
               <div
-                key={index}
+                key={secondIndex}
                 className={className}
                 style={{
                   top: `${uwu.top * 100}vh`,
