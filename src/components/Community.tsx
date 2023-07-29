@@ -167,6 +167,8 @@ const socials: SocialType[] = [
 const Community = () => {
   const [atBottom, setAtBottom] = useState(false);
 
+  const startIndex = Math.floor(Math.random() * imageOptions.length);
+
   // set window listener to check if at bottom
   useEffect(() => {
     // set at bottom if at bottom
@@ -197,6 +199,10 @@ const Community = () => {
           const className = `community-uwu-container ${
             atBottom ? "community-animated" : ""
           }`;
+
+          const firstIndex = (startIndex + index * 2) % imageOptions.length;
+          const secondIndex =
+            (startIndex + index * 2 + 1) % imageOptions.length;
           return (
             <>
               <div
@@ -212,11 +218,7 @@ const Community = () => {
               >
                 <img
                   className="community-uwu"
-                  src={`/assets/community/${
-                    imageOptions[
-                      Math.floor(Math.random() * imageOptions.length)
-                    ]
-                  }`}
+                  src={`/assets/community/${imageOptions[firstIndex]}`}
                   alt="uwu"
                 />
               </div>
@@ -233,11 +235,7 @@ const Community = () => {
               >
                 <img
                   className="community-uwu"
-                  src={`/assets/community/${
-                    imageOptions[
-                      Math.floor(Math.random() * imageOptions.length)
-                    ]
-                  }`}
+                  src={`/assets/community/${imageOptions[secondIndex]}`}
                   alt="uwu"
                 />
               </div>
