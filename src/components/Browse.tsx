@@ -1,11 +1,10 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Browse.css";
 import Section from "./Section";
 import useFixedStyles from "../hooks/use-scroll-data";
 import Button from "./Button";
 
 const UWU_OPTIONS = 49;
-const OFFSET = Math.round(Math.random() * UWU_OPTIONS);
 
 interface UwuType {
   width: number; // Percentage of screen width
@@ -85,7 +84,14 @@ const uwus: UwuType[] = [
 
 const Browse = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [offset, setOffset] = useState(null);
   const { fixedStyles, percentScrolled } = useFixedStyles(containerRef);
+
+  useEffect(() => {
+    setOffset(Math.round(Math.random() * UWU_OPTIONS));
+  }, []);
+
+  if (!offset) return null;
 
   return (
     <Section id="browse">
@@ -111,7 +117,7 @@ const Browse = () => {
                 zIndex,
               };
               const image = `/assets/browse/${
-                ((index + OFFSET) % UWU_OPTIONS) + 1
+                ((index + offset) % UWU_OPTIONS) + 1
               }.jpg`;
               return (
                 <div
