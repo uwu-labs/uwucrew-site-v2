@@ -29,7 +29,7 @@ const Why = () => {
           </div>
         </div>
         <div className="why-content">
-          <h1 className="why-header">Why uwucrew</h1>
+          <h1 className="why-header">Why uwucrew?</h1>
           <img className="why-image" src={uwu1} alt="uwu" />
           <h2 className="why-sub-header">Discover a world of creativity</h2>
           <p className="why-text">

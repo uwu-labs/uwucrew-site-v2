@@ -323,7 +323,9 @@ const Community = () => {
             alt="uwucrew icon"
             className="community-content-image"
           />
-          <div className="community-content-header">Join the community</div>
+          <div className="community-content-header">
+            Be part of the community
+          </div>
           <Button
             link={DISCORD_LINK}
             label="Join our Discord"

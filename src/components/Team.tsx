@@ -10,13 +10,13 @@ import danny from "../assets/team/danny.png";
 import nines from "../assets/team/nines.png";
 import jules from "../assets/team/jules.png";
 
-import laurDeriv from "../assets/team/derivatives/danny.png";
+import laurDeriv from "../assets/team/derivatives/laur.png";
 import kiwiDeriv from "../assets/team/derivatives/kiwi.jpg";
 import morelloDeriv from "../assets/team/derivatives/morello.png";
-import chaseDeriv from "../assets/team/derivatives/danny.png";
+// import chaseDeriv from "../assets/team/derivatives/danny.png";
 import omarDeriv from "../assets/team/derivatives/omar.png";
 import dannyDeriv from "../assets/team/derivatives/danny.png";
-import ninesDeriv from "../assets/team/derivatives/danny.png";
+// import ninesDeriv from "../assets/team/derivatives/danny.png";
 import julesDeriv from "../assets/team/derivatives/jules.png";
 
 import twitter from "../assets/socials/team/twitter.svg";
@@ -26,7 +26,7 @@ interface TeamMemberType {
   name: string;
   image: string;
   role: string;
-  deriv: string;
+  deriv?: string;
   twitter?: string;
   github?: string;
 }
@@ -44,7 +44,6 @@ const members: TeamMemberType[] = [
     role: "Co-Founder & Dev",
     image: kiwi,
     twitter: "https://twitter.com/0xKiwi_",
-    github: "https://github.com/0xKiwi",
     deriv: kiwiDeriv,
   },
   {
@@ -80,15 +79,12 @@ const members: TeamMemberType[] = [
     role: "Front End Dev",
     image: chase,
     twitter: "https://twitter.com/chase_manning_",
-    github: "https://github.com/chase-manning",
-    deriv: chaseDeriv,
   },
   {
     name: "Nines",
     role: "2D & 3D Designer",
     image: nines,
     twitter: "https://twitter.com/nine__s",
-    deriv: ninesDeriv,
   },
 ];
 
@@ -107,11 +103,13 @@ const Team = () => {
                     alt={member.name}
                     className="team-member-image"
                   />
-                  <img
-                    src={member.deriv}
-                    alt={member.name}
-                    className="team-member-image-overlay"
-                  />
+                  {member.deriv && (
+                    <img
+                      src={member.deriv}
+                      alt={member.name}
+                      className="team-member-image-overlay"
+                    />
+                  )}
                 </div>
                 <h3 className="team-member-name">{member.name}</h3>
                 <h4 className="team-member-title">{member.role}</h4>

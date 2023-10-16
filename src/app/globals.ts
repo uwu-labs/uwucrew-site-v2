@@ -19,8 +19,8 @@ export const TWITTER_LINK = "https://twitter.com/uwucrewnft";
 export const DISCORD_LINK = "https://discord.gg/uwucrew";
 export const INSTAGRAM_LINK = "https://www.instagram.com/uwucrew.art/";
 export const MEDIUM_LINK = "https://medium.com/@uwulabs";
-export const ETHERSCAN_LINK = "https://etherscan.io/address/0x0";
-export const OPENSEA_LINK = `https://etherscan.io/address/${ADDRESS}`;
+export const ETHERSCAN_LINK = `https://etherscan.io/address/${ADDRESS}`;
+export const OPENSEA_LINK = "https://opensea.io/collection/uwucrew";
 export const MIRROR_LINK = "https://mirror.xyz/uwucrew.eth/";
 
 // Socials
