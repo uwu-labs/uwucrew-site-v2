@@ -9,6 +9,8 @@ import omar from "../assets/team/omar.png";
 import danny from "../assets/team/danny.png";
 import nines from "../assets/team/nines.png";
 import jules from "../assets/team/jules.png";
+import cucurbit from "../assets/team/cucurbit.png";
+import catinkleins from "../assets/team/catinkleins.png";
 
 import laurDeriv from "../assets/team/derivatives/laur.png";
 import kiwiDeriv from "../assets/team/derivatives/kiwi.jpg";
@@ -68,6 +70,12 @@ const members: TeamMemberType[] = [
     deriv: dannyDeriv,
   },
   {
+    name: "Nines",
+    role: "2D & 3D Designer",
+    image: nines,
+    twitter: "https://twitter.com/nine__s",
+  },
+  {
     name: "Jules",
     role: "Creative assistant",
     image: jules,
@@ -75,16 +83,22 @@ const members: TeamMemberType[] = [
     deriv: julesDeriv,
   },
   {
+    name: "Cucurbit",
+    role: "Front End Dev",
+    image: cucurbit,
+    twitter: "https://twitter.com/PiperCucu",
+  },
+  {
+    name: "CatInKleins",
+    role: "Solidity Dev",
+    image: catinkleins,
+    twitter: "https://twitter.com/CatInKleins",
+  },
+  {
     name: "Chase",
     role: "Front End Dev",
     image: chase,
     twitter: "https://twitter.com/chase_manning_",
-  },
-  {
-    name: "Nines",
-    role: "2D & 3D Designer",
-    image: nines,
-    twitter: "https://twitter.com/nine__s",
   },
 ];
 
