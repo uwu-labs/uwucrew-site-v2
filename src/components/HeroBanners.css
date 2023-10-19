@@ -80,7 +80,7 @@
 }
 
 .uwu-container:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
   z-index: 10;
 
   @media (max-width: 768px) {
