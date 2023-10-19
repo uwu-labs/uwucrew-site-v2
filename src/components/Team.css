@@ -120,6 +120,10 @@
   cursor: pointer;
 }
 
+.team-member-social-link:hover {
+  transform: scale(1.15);
+}
+
 .team-member-social-image {
   height: 2.4rem;
 

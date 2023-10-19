@@ -118,6 +118,10 @@
   cursor: pointer;
 }
 
+.community-footer-social-link:hover {
+  transform: scale(1.15);
+}
+
 .community-footer-social-image {
   height: 2.8rem;
   margin-left: 1.2rem;
