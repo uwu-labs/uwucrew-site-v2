@@ -23,6 +23,7 @@ import julesDeriv from "../assets/team/derivatives/jules.png";
 
 import twitter from "../assets/socials/team/twitter.svg";
 import github from "../assets/socials/team/github.svg";
+import foundation from "../assets/socials/team/foundation.svg";
 
 interface TeamMemberType {
   name: string;
@@ -31,6 +32,7 @@ interface TeamMemberType {
   deriv?: string;
   twitter?: string;
   github?: string;
+  foundation?: string;
 }
 
 const members: TeamMemberType[] = [
@@ -39,6 +41,7 @@ const members: TeamMemberType[] = [
     role: "Co-Founder & Artist",
     image: laur,
     twitter: "https://twitter.com/fungibleartist",
+    foundation: "https://foundation.app/@laur",
     deriv: laurDeriv,
   },
   {
@@ -46,6 +49,7 @@ const members: TeamMemberType[] = [
     role: "Co-Founder & Dev",
     image: kiwi,
     twitter: "https://twitter.com/0xKiwi_",
+    foundation: "https://foundation.app/@Kiwi",
     deriv: kiwiDeriv,
   },
   {
@@ -53,6 +57,7 @@ const members: TeamMemberType[] = [
     role: "Bit of everything",
     image: morello,
     twitter: "https://twitter.com/morellostorment",
+    foundation: "https://foundation.app/@morello",
     deriv: morelloDeriv,
   },
   {
@@ -60,6 +65,7 @@ const members: TeamMemberType[] = [
     role: "Community Manager",
     image: omar,
     twitter: "https://twitter.com/OmarIbisa",
+    foundation: "https://foundation.app/@omr",
     deriv: omarDeriv,
   },
   {
@@ -67,6 +73,7 @@ const members: TeamMemberType[] = [
     role: "Partnerships Manager",
     image: danny,
     twitter: "https://twitter.com/0xMaple",
+    foundation: "https://foundation.app/@0xMaple",
     deriv: dannyDeriv,
   },
   {
@@ -80,6 +87,7 @@ const members: TeamMemberType[] = [
     role: "Creative assistant",
     image: jules,
     twitter: "https://twitter.com/0xMaple",
+    foundation: "https://foundation.app/@jujulesblanc",
     deriv: julesDeriv,
   },
   {
@@ -87,6 +95,7 @@ const members: TeamMemberType[] = [
     role: "Front End Dev",
     image: cucurbit,
     twitter: "https://twitter.com/PiperCucu",
+    foundation: "https://foundation.app/@milky.eth",
   },
   {
     name: "CatInKleins",
@@ -142,16 +151,16 @@ const Team = () => {
                       />
                     </a>
                   )}
-                  {member.github && (
+                  {member.foundation && (
                     <a
-                      href={member.github}
+                      href={member.foundation}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="team-member-social-link"
                     >
                       <img
-                        src={github}
-                        alt="github"
+                        src={foundation}
+                        alt="foundation"
                         className="team-member-social-image"
                       />
                     </a>
