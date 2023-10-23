@@ -97,6 +97,7 @@ const Browse = () => {
     <Section id="browse">
       <div className="browse" ref={containerRef}>
         <div className="browse-content" style={fixedStyles}>
+          <div className="browse-highlight" />
           <h2 className="browse-header">Browse anime art from the community</h2>
           <Button
             link="https://uwucrew.art/derivatives"
