@@ -1,12 +1,12 @@
 .browse {
   width: 100%;
-  height: 400vh;
+  height: 400dvh;
   position: relative;
 }
 
 .browse-content {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   display: absolute;
   top: 0;
   left: 0;
