@@ -1,6 +1,6 @@
 .community {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background: #f4f5f6;
   position: relative;
   overflow: hidden;
@@ -18,7 +18,7 @@
 .community-left-glow {
   position: absolute;
   width: 50%;
-  height: 100vh;
+  height: 100dvh;
   top: 70%;
   left: -12.5%;
   background: #73d7e8;
@@ -29,7 +29,7 @@
 .community-right-glow {
   position: absolute;
   width: 50%;
-  height: 100vh;
+  height: 100dvh;
   top: 70%;
   right: -12.5%;
   background: #73d7e8;
@@ -40,7 +40,7 @@
 .community-top-glow {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   top: -50%;
   left: 0;
   background: #73d7e8;

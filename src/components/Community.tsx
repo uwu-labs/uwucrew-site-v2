@@ -232,10 +232,10 @@ const Community = () => {
                 key={firstIndex}
                 className={className}
                 style={{
-                  top: `${uwu.top * 100}vh`,
-                  left: `${uwu.side * 100}vh`,
-                  width: `${uwu.size * 100}vh`,
-                  height: `${uwu.size * 100}vh`,
+                  top: `${uwu.top * 100}dvh`,
+                  left: `${uwu.side * 100}dvh`,
+                  width: `${uwu.size * 100}dvh`,
+                  height: `${uwu.size * 100}dvh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
               >
@@ -249,10 +249,10 @@ const Community = () => {
                 key={secondIndex}
                 className={className}
                 style={{
-                  top: `${uwu.top * 100}vh`,
-                  right: `${uwu.side * 100}vh`,
-                  width: `${uwu.size * 100}vh`,
-                  height: `${uwu.size * 100}vh`,
+                  top: `${uwu.top * 100}dvh`,
+                  right: `${uwu.side * 100}dvh`,
+                  width: `${uwu.size * 100}dvh`,
+                  height: `${uwu.size * 100}dvh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
               >
@@ -281,10 +281,10 @@ const Community = () => {
                 key={firstIndex}
                 className={className}
                 style={{
-                  top: `${uwu.top * 100}vh`,
-                  left: `${uwu.side * 100}vh`,
-                  width: `${uwu.size * 100}vh`,
-                  height: `${uwu.size * 100}vh`,
+                  top: `${uwu.top * 100}dvh`,
+                  left: `${uwu.side * 100}dvh`,
+                  width: `${uwu.size * 100}dvh`,
+                  height: `${uwu.size * 100}dvh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
               >
@@ -298,10 +298,10 @@ const Community = () => {
                 key={secondIndex}
                 className={className}
                 style={{
-                  top: `${uwu.top * 100}vh`,
-                  right: `${uwu.side * 100}vh`,
-                  width: `${uwu.size * 100}vh`,
-                  height: `${uwu.size * 100}vh`,
+                  top: `${uwu.top * 100}dvh`,
+                  right: `${uwu.side * 100}dvh`,
+                  width: `${uwu.size * 100}dvh`,
+                  height: `${uwu.size * 100}dvh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
               >
