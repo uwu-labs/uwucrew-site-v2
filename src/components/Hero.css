@@ -11,7 +11,7 @@
     #f5dce8 100%
   );
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     height: auto;
   }
 }

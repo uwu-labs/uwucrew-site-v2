@@ -5,7 +5,7 @@
   padding-top: 4.6dvh;
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     padding-top: 1.6rem;
   }
 }
@@ -26,7 +26,7 @@
 
   animation: slide-right 45s linear infinite;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     width: calc((17rem + 1.6rem) * 40);
     margin-bottom: 1.6rem;
   }
@@ -52,7 +52,7 @@
 
   animation: slide-left 45s linear infinite;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     width: calc((17rem + 1.6rem) * 40);
     margin-bottom: 1.6rem;
   }
@@ -72,7 +72,7 @@
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     height: 17rem;
     width: 17rem;
     margin: 0 0.8rem;
@@ -83,7 +83,7 @@
   transform: scale(1.15);
   z-index: 10;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     transform: scale(1.15);
   }
 }
