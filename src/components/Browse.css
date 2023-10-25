@@ -38,6 +38,17 @@
   z-index: 2;
 }
 
+.browse-highlight {
+  position: absolute;
+  bottom: -5rem;
+  left: 6rem;
+  width: 50%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  filter: blur(200px);
+}
+
 .browse-header {
   color: var(--main);
   font-size: 8.8rem;
