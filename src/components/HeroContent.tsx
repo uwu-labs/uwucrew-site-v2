@@ -35,7 +35,7 @@ const HeroContent = () => {
             anime art!
           </p>
           <Button
-            label="View on OpenSea"
+            label="View on OpenSea!"
             link={OPENSEA_LINK}
             icon={openseaIcon}
           />

@@ -76,7 +76,7 @@ const Blog = () => {
         <Button
           primary
           link={MIRROR_LINK}
-          label="View all blog posts on Mirror"
+          label="Check out our blog!"
         />
       </div>
     </Section>

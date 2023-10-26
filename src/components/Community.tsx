@@ -328,7 +328,7 @@ const Community = () => {
           </div>
           <Button
             link={DISCORD_LINK}
-            label="Join our Discord"
+            label="Join our Discord!"
             icon={whiteDiscord}
           />
         </div>

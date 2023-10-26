@@ -101,7 +101,7 @@ const Browse = () => {
           <h2 className="browse-header">Browse anime art from the community</h2>
           <Button
             link="https://uwucrew.art/derivatives"
-            label="View derivative gallery"
+            label="Visit the art gallery!"
           />
           {
             // Render uwus
