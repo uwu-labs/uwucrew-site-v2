@@ -24,56 +24,56 @@ import whiteDiscord from "../assets/socials/discord.svg";
 import { useEffect, useState } from "react";
 
 const imageOptions = [
-  "./Rho.png",
-  "./Naninna.avif",
-  "./Alice.avif",
-  "./Alice.jpg",
-  "./farah.png",
-  "./Farah.avif",
-  "./Liga.avif",
-  "./Vanaric.avif",
-  "./Fei.avif",
-  "./Tuwu.avif",
-  "./Touge.avif",
-  "./Josh (1).jpg",
-  "./JG.avif",
-  "./Vixpora.jpg",
-  "./Imp.avif",
-  "./Adam.avif",
-  "./Liga.jpg",
-  "./Touge.png",
-  "./Shin (1).avif",
-  "./Palis.png",
-  "./Imp.jpg",
-  "./JG.png",
-  "./Nate.avif",
-  "./Suhate.jpg",
-  "./Neetori.jpeg",
-  "./Tuwu.jpg",
-  "./Cloudy.jpg",
-  "./Vanaric.png",
-  "./Fei.jpg",
-  "./Vixpora.avif",
-  "./Pawwao.png",
-  "./Adam.png",
-  "./Nate.jpg",
-  "./Rho.avif",
-  "./Naninna.jpg",
-  "./Shiomu.avif",
-  "./Pawwao.avif",
-  "./Josh.jpg",
-  "./Jess (1).jpg",
-  "./shiomu.png",
-  "./stuwu.avif",
-  "./Suhate.avif",
-  "./stuwu.png",
-  "./Jess.jpg",
-  "./Cloudy.avif",
-  "./Benangbaja.avif",
-  "./Benanbaja.jpg",
-  "./Shin.avif",
-  "./Palis.avif",
-  "./Neetori.avif",
+  "Rho.png",
+  "Naninna.avif",
+  "Alice.avif",
+  "Alice.jpg",
+  "farah.png",
+  "Farah.avif",
+  "Liga.avif",
+  "Vanaric.avif",
+  "Fei.avif",
+  "Tuwu.avif",
+  "Touge.avif",
+  "Josh (1).jpg",
+  "JG.avif",
+  "Vixpora.jpg",
+  "Imp.avif",
+  "Adam.avif",
+  "Liga.jpg",
+  "Touge.png",
+  "Shin (1).avif",
+  "Palis.png",
+  "Imp.jpg",
+  "JG.png",
+  "Nate.avif",
+  "Suhate.jpg",
+  "Neetori.jpeg",
+  "Tuwu.jpg",
+  "Cloudy.jpg",
+  "Vanaric.png",
+  "Fei.jpg",
+  "Vixpora.avif",
+  "Pawwao.png",
+  "Adam.png",
+  "Nate.jpg",
+  "Rho.avif",
+  "Naninna.jpg",
+  "Shiomu.avif",
+  "Pawwao.avif",
+  "Josh.jpg",
+  "Jess (1).jpg",
+  "shiomu.png",
+  "stuwu.avif",
+  "Suhate.avif",
+  "stuwu.png",
+  "Jess.jpg",
+  "Cloudy.avif",
+  "Benangbaja.avif",
+  "Benanbaja.jpg",
+  "Shin.avif",
+  "Palis.avif",
+  "Neetori.avif",
 ];
 
 interface UwuType {
@@ -227,9 +227,8 @@ const Community = () => {
           const secondIndex =
             (startIndex + index * 2 + 1) % imageOptions.length;
           return (
-            <>
+            <div key={index}>
               <div
-                key={firstIndex}
                 className={className}
                 style={{
                   top: `${uwu.top * 100}dvh`,
@@ -246,7 +245,6 @@ const Community = () => {
                 />
               </div>
               <div
-                key={secondIndex}
                 className={className}
                 style={{
                   top: `${uwu.top * 100}dvh`,
@@ -262,7 +260,7 @@ const Community = () => {
                   alt="uwu"
                 />
               </div>
-            </>
+            </div>
           );
         })}
 
@@ -276,9 +274,8 @@ const Community = () => {
           const secondIndex =
             (startIndex + index * 2 + 1) % imageOptions.length;
           return (
-            <>
+            <div key={index}>
               <div
-                key={firstIndex}
                 className={className}
                 style={{
                   top: `${uwu.top * 100}dvh`,
@@ -295,7 +292,6 @@ const Community = () => {
                 />
               </div>
               <div
-                key={secondIndex}
                 className={className}
                 style={{
                   top: `${uwu.top * 100}dvh`,
@@ -311,7 +307,7 @@ const Community = () => {
                   alt="uwu"
                 />
               </div>
-            </>
+            </div>
           );
         })}
 
