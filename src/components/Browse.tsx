@@ -18,7 +18,7 @@ const uwus: UwuType[] = [
     width: 25,
     speed: 0.35,
     left: 3,
-    top: -5,
+    top: 2,
   },
   {
     width: 10,
