@@ -196,9 +196,11 @@ const Community = () => {
   useEffect(() => {
     // set at bottom if at bottom
     const handleScroll = () => {
+      const innerHeight = window.innerHeight;
+
       if (
-        window.innerHeight + window.scrollY >=
-        document.body.offsetHeight - 2
+        innerHeight + window.scrollY >=
+        document.body.offsetHeight - innerHeight
       ) {
         setAtBottom(true);
       }
