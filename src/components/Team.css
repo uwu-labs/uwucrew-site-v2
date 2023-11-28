@@ -118,6 +118,7 @@
 
 .team-member-social-link {
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .team-member-social-link:hover {
