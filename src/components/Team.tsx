@@ -20,6 +20,7 @@ import omarDeriv from "../assets/team/derivatives/omar.png";
 import dannyDeriv from "../assets/team/derivatives/danny.png";
 // import ninesDeriv from "../assets/team/derivatives/danny.png";
 import julesDeriv from "../assets/team/derivatives/jules.png";
+import catinkleinsDeriv from "../assets/team/derivatives/catinkleins.png";
 
 import twitter from "../assets/socials/team/twitter.svg";
 import github from "../assets/socials/team/github.svg";
@@ -102,6 +103,7 @@ const members: TeamMemberType[] = [
     role: "Solidity Dev",
     image: catinkleins,
     twitter: "https://twitter.com/CatInKleins",
+    deriv: catinkleinsDeriv,
   },
   {
     name: "Chase",
