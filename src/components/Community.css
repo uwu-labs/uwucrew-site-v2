@@ -116,6 +116,7 @@
 
 .community-footer-social-link {
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .community-footer-social-link:hover {
