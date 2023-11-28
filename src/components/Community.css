@@ -66,8 +66,8 @@
 }
 
 .community-content-image {
-  width: 10rem;
-  margin-bottom: 1rem;
+  width: 25rem;
+  margin-bottom: 5rem;
 
   @media (max-width: 900px) {
     width: 9.5;

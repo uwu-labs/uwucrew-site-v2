@@ -1,7 +1,7 @@
 import "./Community.css";
 import Section from "./Section";
 
-import logo from "../assets/icon.svg";
+import logo from "../assets/bunnyPrimary.png";
 import Button from "./Button";
 import {
   DISCORD_LINK,
