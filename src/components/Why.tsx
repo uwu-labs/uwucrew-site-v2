@@ -14,10 +14,7 @@ const Why = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { fixedStyles, percentScrolled } = useFixedStyles(containerRef);
 
-  const image = Math.min(
-    Math.floor(percentScrolled * images.length),
-    images.length - 1
-  );
+  let image = percentScrolled < 0.325 ? 0 : percentScrolled < 0.825 ? 1 : 2;
 
   return (
     <Section id="why">
@@ -29,24 +26,23 @@ const Why = () => {
           </div>
         </div>
         <div className="why-content">
-          <h1 className="why-header">Why uwucrew?</h1>
+          <h1 className="why-header">Why uwucrew?!</h1>
           <img className="why-image" src={uwu1} alt="uwu" />
-          <h2 className="why-sub-header">Discover a world of creativity</h2>
+          <h2 className="why-sub-header">Uniting the world through art! 🌍</h2>
           <p className="why-text">
-            Unlock a vibrant and artistic world and get to know the 250+ artists
-            in the uwu community!
+            Fall down a rabbit hole of creativity and discover our global community, 
+            including over 250+ anime artists! 
           </p>
           <img className="why-image" src={uwu2} alt="uwu" />
-          <h2 className="why-sub-header">Join the anime art movement</h2>
+          <h2 className="why-mid-sub-header">Join The Anime Art Revolution! 🚀</h2>
           <p className="why-text">
-            Join a movement to highlight creativity and make a lasting impact on
-            anime art by discovering and connecting with artists!
+            Be part of the wave that's defining our generation! 
+            Lets create a culture where every creator shines, together!
           </p>
           <img className="why-image" src={uwu3} alt="uwu" />
-          <h2 className="why-sub-header">Become a member of the uwuminati</h2>
+          <h2 className="why-mid-sub-header">Become one of the uwuminati 😎</h2>
           <p className="why-text">
-            Gain access to the uwuminati holder-only chat and form meaningful
-            connections with fellow anime fans and creators!
+            Join a crew that values creativity - connect with like-minded people who strive to make a positive impact on anime art!
           </p>
           <div className="why-buffer" />
         </div>

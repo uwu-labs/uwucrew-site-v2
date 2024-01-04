@@ -1,7 +1,7 @@
 import "./HeroContent.css";
 
-import { OPENSEA_LINK, SOCIALS } from "../app/globals";
-import openseaIcon from "../assets/socials/opensea.svg";
+import { DISCORD_LINK, SOCIALS } from "../app/globals";
+import discordIcon from "../assets/socials/discord.svg";
 import Button from "./Button";
 
 const HeroContent = () => {
@@ -10,8 +10,7 @@ const HeroContent = () => {
       <div className="hero-content">
         <div className="hero-column">
           <h3 className="hero-content-header">
-            Join uwucrew and immerse yourself in a captivating world of anime
-            art
+            Welcome to uwucrew: immerse yourself into the future of anime art 🌐✨
           </h3>
           <div className="socials-container">
             <div className="socials-text">Find us on</div>
@@ -31,13 +30,12 @@ const HeroContent = () => {
         <div className="hero-column">
           <p className="hero-content-text">
             Find your place in a passionate community of anime art enthusiasts,
-            where artists and collectors can connect over their shared love for
-            anime art!
+            where artists and collectors both make a global impact!
           </p>
           <Button
-            label="View on OpenSea!"
-            link={OPENSEA_LINK}
-            icon={openseaIcon}
+            label="Visit our Discord!"
+            link={DISCORD_LINK}
+            icon={discordIcon}
           />
         </div>
       </div>

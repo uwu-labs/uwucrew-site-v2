@@ -17,56 +17,32 @@ const uwus: UwuType[] = [
   {
     width: 25,
     speed: 0.35,
-    left: 3,
+    left: 8,
     top: 2,
   },
   {
-    width: 10,
-    speed: 0.7,
-    left: 75,
-    top: 15,
-  },
-  {
-    width: 18,
+    width: 20,
     speed: 0.2,
     left: 50,
-    top: 40,
+    top: 20,
   },
   {
     width: 20,
     speed: 0.35,
-    left: 78,
-    top: 60,
+    left: 75,
+    top: 65,
   },
   {
-    width: 15,
-    speed: 0.6,
+    width: 20,
+    speed: 0.51,
     left: 25,
-    top: 110,
+    top: 125,
   },
   {
     width: 25,
     speed: 0.35,
-    left: -5,
+    left: 1,
     top: 130,
-  },
-  {
-    width: 15,
-    speed: 0.6,
-    left: 75,
-    top: 180,
-  },
-  {
-    width: 13,
-    speed: 0.75,
-    left: 30,
-    top: 220,
-  },
-  {
-    width: 10,
-    speed: 1.4,
-    left: 50,
-    top: 400,
   },
   {
     width: 40,
@@ -76,9 +52,9 @@ const uwus: UwuType[] = [
   },
   {
     width: 20,
-    speed: 0.8,
-    left: 80,
-    top: 350,
+    speed: 0.6,
+    left: 78,
+    top: 240,
   },
 ];
 

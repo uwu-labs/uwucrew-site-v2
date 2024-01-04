@@ -38,54 +38,54 @@ interface TeamMemberType {
 
 const members: TeamMemberType[] = [
   {
-    name: "Laur",
-    role: "Co-Founder & Artist",
-    image: laur,
-    twitter: "https://twitter.com/fungibleartist",
-    foundation: "https://foundation.app/@laur",
-    deriv: laurDeriv,
-  },
-  {
     name: "Kiwi",
-    role: "Co-Founder & Dev",
+    role: "team leader",
     image: kiwi,
     twitter: "https://twitter.com/0xKiwi_",
     foundation: "https://foundation.app/@Kiwi",
     deriv: kiwiDeriv,
   },
   {
-    name: "Morello",
-    role: "Bit of everything",
-    image: morello,
-    twitter: "https://twitter.com/morellostorment",
-    foundation: "https://foundation.app/@morello",
-    deriv: morelloDeriv,
-  },
-  {
-    name: "Omar",
-    role: "Community Manager",
-    image: omar,
-    twitter: "https://twitter.com/OmarIbisa",
-    foundation: "https://foundation.app/@omr",
-    deriv: omarDeriv,
+    name: "Laur",
+    role: "lead artist",
+    image: laur,
+    twitter: "https://twitter.com/fungibleartist",
+    foundation: "https://foundation.app/@laur",
+    deriv: laurDeriv,
   },
   {
     name: "Danny",
-    role: "Partnerships Manager",
+    role: "operations",
     image: danny,
     twitter: "https://twitter.com/0xMaple",
     foundation: "https://foundation.app/@0xMaple",
     deriv: dannyDeriv,
   },
   {
+    name: "Omar",
+    role: "Community",
+    image: omar,
+    twitter: "https://twitter.com/OmarIbisa",
+    foundation: "https://foundation.app/@omr",
+    deriv: omarDeriv,
+  },
+  {
+    name: "Morello",
+    role: "Advisor",
+    image: morello,
+    twitter: "https://twitter.com/morellostorment",
+    foundation: "https://foundation.app/@morello",
+    deriv: morelloDeriv,
+  },
+  {
     name: "Nines",
-    role: "2D & 3D Designer",
+    role: "designer",
     image: nines,
     twitter: "https://twitter.com/nine__s",
   },
   {
     name: "Jules",
-    role: "Creative assistant",
+    role: "artist",
     image: jules,
     twitter: "https://twitter.com/BlancNFT",
     foundation: "https://foundation.app/@jujulesblanc",
@@ -93,7 +93,7 @@ const members: TeamMemberType[] = [
   },
   {
     name: "Cucurbit",
-    role: "Front End Dev",
+    role: "Web Dev",
     image: cucurbit,
     twitter: "https://twitter.com/PiperCucu",
     foundation: "https://foundation.app/@milky.eth",
@@ -117,7 +117,7 @@ const Team = () => {
   return (
     <Section id="team">
       <div className="team">
-        <h2 className="team-header">Meet the team</h2>
+        <h2 className="team-header">our team</h2>
         <div className="team-members">
           {members.map((member, index) => {
             return (
