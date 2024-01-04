@@ -12,7 +12,7 @@
 
 @keyframes slide-right {
   from {
-    transform: translateX(-25%);
+    transform: translateX(-50%);
   }
   to {
     transform: translateX(0);
@@ -24,7 +24,7 @@
   display: flex;
   margin-bottom: 2.4rem;
 
-  animation: slide-right 45s linear infinite;
+  animation: slide-right 90s linear infinite;
 
   @media (max-width: 900px) {
     width: calc((17rem + 1.6rem) * 40);
@@ -41,7 +41,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-25%);
+    transform: translateX(-50%);
   }
 }
 
@@ -50,7 +50,7 @@
   display: flex;
   margin-bottom: 2.4rem;
 
-  animation: slide-left 45s linear infinite;
+  animation: slide-left 90s linear infinite;
 
   @media (max-width: 900px) {
     width: calc((17rem + 1.6rem) * 40);

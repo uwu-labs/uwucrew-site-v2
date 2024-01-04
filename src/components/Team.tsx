@@ -85,7 +85,7 @@ const members: TeamMemberType[] = [
   },
   {
     name: "Jules",
-    role: "artist",
+    role: "illustrator",
     image: jules,
     twitter: "https://twitter.com/BlancNFT",
     foundation: "https://foundation.app/@jujulesblanc",
@@ -107,7 +107,7 @@ const members: TeamMemberType[] = [
   },
   {
     name: "Chase",
-    role: "Front End Dev",
+    role: "web Dev",
     image: chase,
     twitter: "https://twitter.com/chase_manning_",
   },
