@@ -40,9 +40,9 @@ const Why = () => {
             Lets create a culture where every creator shines, together!
           </p>
           <img className="why-image" src={uwu3} alt="uwu" />
-          <h2 className="why-mid-sub-header">Become one of the uwuminati 😎</h2>
+          <h2 className="why-mid-sub-header">Enter the uwuminati 😎</h2>
           <p className="why-text">
-            Join a crew that values creativity - connect with like-minded people who strive to make a positive impact on anime art!
+            Find a crew that values creativity - connect with like-minded people who strive to make a positive impact on anime art!
           </p>
           <div className="why-buffer" />
         </div>

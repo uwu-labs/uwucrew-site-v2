@@ -87,11 +87,11 @@
 }
 
 .why-sub-header {
-  max-width: 30rem;
+  max-width: none;
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   margin-top: 16rem;
   color: var(--bg);
 
@@ -105,11 +105,11 @@
 }
 
 .why-mid-sub-header {
-  max-width: 30rem;
+  max-width: none;
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   margin-top: 18rem;
   color: var(--bg);
 

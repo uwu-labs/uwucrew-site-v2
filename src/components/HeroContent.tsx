@@ -10,7 +10,7 @@ const HeroContent = () => {
       <div className="hero-content">
         <div className="hero-column">
           <h3 className="hero-content-header">
-            Welcome to uwucrew: immerse yourself into the future of anime art 🌐✨
+            Welcome to uwucrew:<br/>immerse yourself into the future of anime art 🌐✨
           </h3>
           <div className="socials-container">
             <div className="socials-text">Find us on</div>
