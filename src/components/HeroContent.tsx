@@ -30,7 +30,7 @@ const HeroContent = () => {
         <div className="hero-column">
           <p className="hero-content-text">
             Find your place in a passionate community of anime art enthusiasts,
-            where artists and collectors both make a global impact!
+            where artists and collectors make a global impact!
           </p>
           <Button
             label="Visit our Discord!"
