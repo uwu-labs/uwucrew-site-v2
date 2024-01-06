@@ -74,10 +74,10 @@ const Browse = () => {
       <div className="browse" ref={containerRef}>
         <div className="browse-content" style={fixedStyles}>
           <div className="browse-highlight" />
-          <h2 className="browse-header">Browse anime art from the community</h2>
+          <h2 className="browse-header">admire artists from all over the world</h2>
           <Button
             link="https://uwucrew.art/derivatives"
-            label="Go to the art gallery!"
+            label="view the art gallery!"
           />
           {
             // Render uwus
