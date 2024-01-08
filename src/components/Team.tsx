@@ -31,6 +31,7 @@ interface TeamMemberType {
   image: string;
   role: string;
   deriv?: string;
+  derivArtist?: string;
   twitter?: string;
   github?: string;
   foundation?: string;
@@ -44,6 +45,7 @@ const members: TeamMemberType[] = [
     twitter: "https://twitter.com/0xKiwi_",
     foundation: "https://foundation.app/@Kiwi",
     deriv: kiwiDeriv,
+    derivArtist: "@_NaokiSaito",
   },
   {
     name: "Laur",
@@ -52,6 +54,7 @@ const members: TeamMemberType[] = [
     twitter: "https://twitter.com/fungibleartist",
     foundation: "https://foundation.app/@laur",
     deriv: laurDeriv,
+    derivArtist: "@onigiriman1998",
   },
   {
     name: "Danny",
@@ -60,6 +63,7 @@ const members: TeamMemberType[] = [
     twitter: "https://twitter.com/0xMaple",
     foundation: "https://foundation.app/@0xMaple",
     deriv: dannyDeriv,
+    derivArtist: "@tsukota888",
   },
   {
     name: "Omar",
@@ -68,6 +72,7 @@ const members: TeamMemberType[] = [
     twitter: "https://twitter.com/OmarIbisa",
     foundation: "https://foundation.app/@omr",
     deriv: omarDeriv,
+    derivArtist: "@rakugaki_choo",
   },
   {
     name: "Morello",
@@ -76,6 +81,7 @@ const members: TeamMemberType[] = [
     twitter: "https://twitter.com/morellostorment",
     foundation: "https://foundation.app/@morello",
     deriv: morelloDeriv,
+    derivArtist: "@lightenbee",
   },
   {
     name: "Nines",
@@ -90,6 +96,7 @@ const members: TeamMemberType[] = [
     twitter: "https://twitter.com/BlancNFT",
     foundation: "https://foundation.app/@jujulesblanc",
     deriv: julesDeriv,
+    derivArtist: "@BlancNFT",
   },
   {
     name: "Cucurbit",
@@ -104,6 +111,7 @@ const members: TeamMemberType[] = [
     image: catinkleins,
     twitter: "https://twitter.com/CatInKleins",
     deriv: catinkleinsDeriv,
+    derivArtist: "@Jack0ftrades0_0",
   },
   {
     name: "Chase",
@@ -129,11 +137,12 @@ const Team = () => {
                     className="team-member-image"
                   />
                   {member.deriv && (
-                    <img
-                      src={member.deriv}
-                      alt={member.name}
-                      className="team-member-image-overlay"
-                    />
+                    <div className="team-member-image-overlay">
+                      <img src={member.deriv} alt={member.name} />
+                      <div className="team-member-image-overlay-credit">
+                        {member.derivArtist}
+                      </div>
+                    </div>
                   )}
                 </div>
                 <h3 className="team-member-name">{member.name}</h3>
