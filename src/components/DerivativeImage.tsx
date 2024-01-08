@@ -5,8 +5,9 @@ import DerivativePopup from "./DerivativePopup";
 
 const Container = styled.div`
   position: relative;
-  margin: 0.5rem;
+  margin: 1rem;
   overflow: hidden;
+  border-radius: 24px;
 `;
 
 const Image = styled.img`
