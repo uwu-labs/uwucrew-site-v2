@@ -21,20 +21,20 @@ const DerivativeImage = ({ derivative }: Props) => {
 
   return (
     <>
-      <div className="container">
+      <div className="derivative-image-container">
         <img
-          className="image"
+          className="derivative-image-image"
           src={magicImageLinkTransform(derivative.image)}
         />
-        <div className="overlay">
+        <div className="derivative-image-overlay">
           <button
-            className="overlay-background"
+            className="derivative-image-overlay-background"
             onClick={() => setPopup(true)}
           />
           <div className="overlay-row top-row">
             {derivative.id && (
               <a
-                className="link"
+                className="derivative-image-link"
                 href={`https://opensea.io/assets/ethereum/0xf75140376d246d8b1e5b8a48e3f00772468b3c0c/${derivative.id}`}
                 target="_blank"
               >{`uwucrew #${derivative.id}`}</a>
@@ -42,12 +42,20 @@ const DerivativeImage = ({ derivative }: Props) => {
           </div>
           <div className="overlay-row bottom-row">
             {derivative.artistLink && derivative.artistName && (
-              <a className="link" target="_blank" href={derivative.artistLink}>
+              <a
+                className="derivative-image-link"
+                target="_blank"
+                href={derivative.artistLink}
+              >
                 {derivative.artistName}
               </a>
             )}
             {derivative.post && (
-              <a className="link" target="_blank" href={derivative.post}>
+              <a
+                className="derivative-image-link"
+                target="_blank"
+                href={derivative.post}
+              >
                 Twitter Post
               </a>
             )}
