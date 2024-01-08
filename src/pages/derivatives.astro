@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header";
+import DerivativesComponent from "../components/Derivatives";
+---
+
+<Layout title="uwucrew: the future of anime art ✨">
+  <main>
+    <Header />
+    <DerivativesComponent client:load />
+  </main>
+</Layout>
+
+<style>
+  main {
+    position: relative;
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(
+      180deg,
+      #f5dce8 0%,
+      #fcfdff 8.33%,
+      #fcfdff 88.02%,
+      #f5dce8 100%
+    );
+
+    @media (max-width: 900px) {
+      height: auto;
+    }
+  }
+</style>
