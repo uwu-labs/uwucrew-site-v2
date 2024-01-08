@@ -1,30 +1,23 @@
-import React from "react";
-import styled from "styled-components";
-
-const StyledExitButton = styled.button`
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-`;
+import "./ExitButton.css";
 
 interface LineProps {
   color?: string;
   right?: boolean;
 }
 
-const Line = styled.div<LineProps>`
-  width: 100%;
-  height: 3px;
-  transition: background-color 1s;
-  background-color: ${(props: LineProps) => props.color};
-  transform: ${(props: LineProps) =>
-    props.right
+const Line = ({ color, right }: LineProps) => {
+  const lineStyle = {
+    width: "100%",
+    height: "3px",
+    transition: "background-color 1s",
+    backgroundColor: color,
+    transform: right
       ? "translateY(0px) rotate(45deg)"
-      : "translateY(-3px) rotate(-45deg)"};
-`;
+      : "translateY(-3px) rotate(-45deg)",
+  };
+
+  return <div style={lineStyle} />;
+};
 
 interface Props {
   color: string;
@@ -33,10 +26,10 @@ interface Props {
 
 const ExitButton = ({ color, action }: Props) => {
   return (
-    <StyledExitButton onClick={() => action()}>
+    <button className="exit-button" onClick={action}>
       <Line color={color} right />
       <Line color={color} />
-    </StyledExitButton>
+    </button>
   );
 };
 
