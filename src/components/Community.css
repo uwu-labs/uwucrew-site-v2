@@ -59,11 +59,12 @@
 }
 
 .community-content {
-  position: relative;
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20vh;
+  padding-top: 10vh;
 
   @media (max-width: 900px) {
     padding-bottom: 0px;
