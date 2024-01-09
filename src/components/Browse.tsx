@@ -47,14 +47,14 @@ const uwus: UwuType[] = [
     width: 25,
     speed: 0.375,
     left: 1,
-    top: 135,
+    top: 120,
     over: false,
   },
   {
     width: 40,
     speed: 0.39,
     left: 35,
-    top: 160,
+    top: 170,
     over: false,
   },
   {

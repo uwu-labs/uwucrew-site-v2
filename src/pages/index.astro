@@ -10,12 +10,12 @@ import Community from "../components/Community";
 
 <Layout title="uwucrew: the future of anime art ✨">
   <main>
-    <Hero client:load />
-    <Why client:idle />
+    <Hero />
+    <Why client:visible />
     <Browse client:idle />
-    <Team client:idle />
-    <Blog client:idle />
-    <Community client:idle />
+    <Team />
+    <Blog />
+    <Community client:visible />
   </main>
 </Layout>
 
