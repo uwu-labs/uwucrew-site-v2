@@ -120,6 +120,7 @@
 .community-footer-socials {
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 .community-footer-social-link {

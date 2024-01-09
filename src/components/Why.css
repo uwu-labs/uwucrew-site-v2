@@ -126,6 +126,9 @@
   display: none;
   width: 100%;
   border-radius: 2.4rem;
+  max-height: 40rem;
+  object-fit: cover;
+  object-position: top;
 
   @media (max-width: 900px) {
     display: block;

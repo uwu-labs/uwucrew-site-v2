@@ -333,8 +333,6 @@ const Community = () => {
 
         {/* Footer */}
         <div className="community-footer">
-          <div className="community-footer-text">All rights reserved</div>
-          <div className="community-footer-text">{`© ${new Date().getFullYear()}`}</div>
           <div className="community-footer-socials">
             {socials.map((social) => (
               <a

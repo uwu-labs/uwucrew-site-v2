@@ -63,7 +63,7 @@ const members: TeamMemberType[] = [
     twitter: "https://twitter.com/0xMaple",
     foundation: "https://foundation.app/@0xMaple",
     deriv: dannyDeriv,
-    derivArtist: "@tsukota888",
+    derivArtist: "@lightenbee",
   },
   {
     name: "Omar",
@@ -81,7 +81,7 @@ const members: TeamMemberType[] = [
     twitter: "https://twitter.com/morellostorment",
     foundation: "https://foundation.app/@morello",
     deriv: morelloDeriv,
-    derivArtist: "@lightenbee",
+    derivArtist: "@tsukota888",
   },
   {
     name: "Nines",
@@ -93,10 +93,10 @@ const members: TeamMemberType[] = [
     name: "Jules",
     role: "illustrator",
     image: jules,
-    twitter: "https://twitter.com/BlancNFT",
+    twitter: "https://twitter.com/BlancPixels",
     foundation: "https://foundation.app/@jujulesblanc",
     deriv: julesDeriv,
-    derivArtist: "@BlancNFT",
+    derivArtist: "@BlancPixels",
   },
   {
     name: "Cucurbit",

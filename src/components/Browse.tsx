@@ -11,50 +11,58 @@ interface UwuType {
   speed: number; // Percentage of scroll speed
   left: number; // Percentage of screen width
   top: number; // Percentage of screen height
+  over: boolean;
 }
 
 const uwus: UwuType[] = [
   {
     width: 25,
-    speed: 0.35,
+    speed: 0.25,
     left: 8,
     top: 2,
+    over: false,
   },
   {
-    width: 20,
-    speed: 0.2,
-    left: 50,
-    top: 20,
+    width: 25,
+    speed: 0.15,
+    left: 42,
+    top: 22,
+    over: false,
   },
   {
     width: 20,
     speed: 0.35,
     left: 75,
     top: 65,
+    over: false,
   },
   {
     width: 20,
     speed: 0.51,
-    left: 25,
-    top: 125,
+    left: 23,
+    top: 115,
+    over: true,
   },
   {
     width: 25,
-    speed: 0.35,
+    speed: 0.375,
     left: 1,
-    top: 130,
+    top: 135,
+    over: false,
   },
   {
     width: 40,
-    speed: 0.4,
+    speed: 0.39,
     left: 35,
-    top: 180,
+    top: 160,
+    over: false,
   },
   {
     width: 20,
     speed: 0.6,
     left: 78,
-    top: 240,
+    top: 250,
+    over: true,
   },
 ];
 
@@ -74,7 +82,7 @@ const Browse = () => {
       <div className="browse" ref={containerRef}>
         <div className="browse-content" style={fixedStyles}>
           <div className="browse-highlight" />
-          <h2 className="browse-header">admire artists from all over the world</h2>
+          <h2 className="browse-header">browse artists from all over the world</h2>
           <Button
             link="https://uwucrew.art/derivatives"
             label="view the art gallery!"
@@ -83,7 +91,7 @@ const Browse = () => {
             // Render uwus
             uwus.map((uwu, index) => {
               const { width, speed, left, top } = uwu;
-              const zIndex = speed > 0.5 ? 3 : 1;
+              const zIndex = uwu.over ? 3 : 1;
               const windowHeight = containerRef.current?.clientHeight || 0;
               const translateY = percentScrolled * speed * windowHeight;
               const style = {

@@ -8,13 +8,13 @@ import uwu2 from "../assets/why/02.jpg";
 import uwu3 from "../assets/why/03.jpg";
 import useFixedStyles from "../hooks/use-scroll-data";
 
-const images = [uwu1, uwu2, uwu3];
+const images = [uwu1, uwu3];
 
 const Why = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { fixedStyles, percentScrolled } = useFixedStyles(containerRef);
 
-  let image = percentScrolled < 0.325 ? 0 : percentScrolled < 0.85 ? 1 : 2;
+  let image = percentScrolled < 0.4 ? 0 : 1;
 
   return (
     <Section id="why">
