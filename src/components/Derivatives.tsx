@@ -26,6 +26,7 @@ const Derivatives = () => {
   return (
     <div className="derivatives-styled-derivatives">
       <h1 className="derivatives-title">Art Gallery</h1>
+      <h2 className="derivatives-count">{`${filtered.length} Total Derivatives`}</h2>
       <div className="derivatives-grid">
         <div className="derivatives-filters">
           <div className="derivatives-label">Artist:</div>

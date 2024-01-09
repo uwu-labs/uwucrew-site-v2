@@ -27,12 +27,25 @@
   }
 }
 
+.derivatives-count {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  @media (max-width: 720px) {
+    margin-bottom: 1rem;
+  }
+}
+
 .derivatives-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(15rem, 1fr));
   grid-gap: 2rem;
   width: 40vw;
   margin: auto;
+  margin-top: 4rem;
 
   @media (max-width: 800px) {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
