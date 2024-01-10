@@ -15,7 +15,6 @@
   position: absolute;
   height: 40rem;
   width: 40rem;
-  position: absolute;
   top: -20rem;
   right: -10rem;
   background: pink;
@@ -46,6 +45,7 @@
   height: 100dvh;
   overflow: hidden;
   object-fit: cover;
+  object-position: top;
 }
 
 .why-fixed-image {

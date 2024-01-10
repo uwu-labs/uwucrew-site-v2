@@ -84,7 +84,7 @@ const Browse = () => {
           <div className="browse-highlight" />
           <h2 className="browse-header">browse artists from all over the world</h2>
           <Button
-            link="https://uwucrew.art/derivatives"
+            link="https://uwucrew.art/gallery"
             label="view the art gallery!"
           />
           {

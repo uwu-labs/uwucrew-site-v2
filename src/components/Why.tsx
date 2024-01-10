@@ -14,7 +14,7 @@ const Why = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { fixedStyles, percentScrolled } = useFixedStyles(containerRef);
 
-  let image = percentScrolled < 0.4 ? 0 : 1;
+  let image = percentScrolled < 0.45 ? 0 : 1;
 
   return (
     <Section id="why">
