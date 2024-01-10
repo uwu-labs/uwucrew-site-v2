@@ -161,14 +161,19 @@ const socials: SocialType[] = [
     icon: discord,
   },
   {
-    name: "Etherscan",
-    link: ETHERSCAN_LINK,
-    icon: etherscan,
+    name: "Twitter",
+    link: TWITTER_LINK,
+    icon: twitter,
   },
   {
     name: "Instagram",
     link: INSTAGRAM_LINK,
     icon: instagram,
+  },
+  {
+    name: "Etherscan",
+    link: ETHERSCAN_LINK,
+    icon: etherscan,
   },
   {
     name: "Medium",
@@ -179,11 +184,6 @@ const socials: SocialType[] = [
     name: "OpenSea",
     link: OPENSEA_LINK,
     icon: opensea,
-  },
-  {
-    name: "Twitter",
-    link: TWITTER_LINK,
-    icon: twitter,
   },
 ];
 

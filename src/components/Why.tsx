@@ -42,7 +42,7 @@ const Why = () => {
           <img className="why-image" src={uwu3} alt="uwu" />
           <h2 className="why-mid-sub-header">Enter... the uwuminati 😎</h2>
           <p className="why-text">
-            Discover a crew of like-minded people inspired by anime and striving to make a positive impact on anime art!
+            Discover a crew of like-minded people inspired by anime and building their own digital art collection!
           </p>
           <div className="why-buffer" />
         </div>
