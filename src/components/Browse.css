@@ -72,6 +72,7 @@
 
 .browse-image-container {
   position: absolute;
+  transition: transform 0.1s;
 }
 
 .browse-image {
