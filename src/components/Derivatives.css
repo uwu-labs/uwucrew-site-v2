@@ -4,7 +4,7 @@
   min-height: 100vh;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .derivatives-styled-derivatives {
     padding: 1rem;
     padding-top: 2rem;
@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .derivatives-title {
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -34,7 +34,7 @@
   margin-bottom: 2rem;
   text-align: center;
 
-  @media (max-width: 720px) {
+  @media (max-width: 900px) {
     margin-bottom: 1rem;
   }
 }
@@ -59,7 +59,7 @@
   align-items: center;
   margin-bottom: 3rem;
 
-  @media (max-width: 720px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     margin-bottom: 1rem;
   }
@@ -70,7 +70,7 @@
   align-items: center;
   width: 100%;
 
-  @media (max-width: 720px) {
+  @media (max-width: 900px) {
     margin: 0.6rem 0;
   }
 }
