@@ -10,8 +10,10 @@
     #fcfdff 88.02%,
     #f5dce8 100%
   );
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .hero {
     height: auto;
   }
 }
