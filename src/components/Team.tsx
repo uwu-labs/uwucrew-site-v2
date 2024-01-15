@@ -190,12 +190,16 @@ const Team = () => {
                     alt={member.name}
                     className="team-member-image"
                   />
-                  {member.deriv && (
+                  {member.deriv ? (
                     <div className="team-member-image-overlay">
-                      <img src={member.deriv} alt={member.name} />
+                      <img src={member.deriv} alt={member.derivArtist} />
                       <div className="team-member-image-overlay-credit">
                         {member.derivArtist}
                       </div>
+                    </div>
+                  ) : (
+                    <div className="team-member-image-overlay">
+                      <img src={member.image} alt={member.name} />
                     </div>
                   )}
                 </div>
