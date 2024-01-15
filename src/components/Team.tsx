@@ -159,7 +159,7 @@ const Team = () => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.25 }
     );
 
     if (sectionRef.current) {
@@ -175,8 +175,10 @@ const Team = () => {
 
   return (
     <Section id="team">
-      <div className="team" ref={sectionRef}>
-        <h2 className="team-header">our team</h2>
+      <div className="team">
+        <h2 className="team-header" ref={sectionRef}>
+          our team
+        </h2>
         <div className="team-members">
           {members.map((member, index) => {
             return (
