@@ -8,6 +8,18 @@ import Blog from "../components/Blog";
 import Community from "../components/Community";
 ---
 
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-7M9FKP2465"></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7M9FKP2465');
+  </script>
+</head>
+
 <Layout title="uwucrew: the future of anime art ✨">
   <main>
     <Hero client:load />
