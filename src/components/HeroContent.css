@@ -54,6 +54,18 @@
   }
 }
 
+
+.socials-container-mobile {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .socials-container-mobile {
+    display: none;
+  }
+}
+
 .hero-content-text {
   font-size: 2rem;
   max-width: 52.4rem;

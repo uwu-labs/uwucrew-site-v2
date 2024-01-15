@@ -13,7 +13,7 @@ const HeroContent = () => {
             Welcome to uwucrew:<br/>immerse yourself into the future of anime art 🌐✨
           </h3>
           <div className="socials-container">
-            <div className="socials-text">Find us on</div>
+          <div className="socials-text">Find us on</div>
             {SOCIALS.map((social) => (
               <a
                 href={social.url}
@@ -36,6 +36,19 @@ const HeroContent = () => {
             link={DISCORD_LINK}
             icon={discordIcon}
           />
+          <div className="socials-container-mobile">
+          <div className="socials-text">Find us on</div>
+            {SOCIALS.map((social) => (
+              <a
+                href={social.url}
+                target="_blank"
+                rel="noreferrer"
+                key={social.name}
+              >
+                <img className="social" src={social.image} alt={social.name} />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>
