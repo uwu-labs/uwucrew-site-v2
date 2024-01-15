@@ -81,15 +81,28 @@
   z-index: 10;
 }
 
+
 @media (max-width: 900px) {
   .uwu-container {
-    height: 17rem;
-    width: 17rem;
+    height: 16rem;
+    width: 16rem;
     margin: 0 0.8rem;
   }
 
   .uwu-container:hover {
     transform: scale(1.15);
+  }
+}
+
+@media (max-width: 700px) {
+  .uwu-container {
+    height: 12rem;
+    width: 12rem;
+    margin: 0 0.8rem;
+  }
+
+  .uwu-container:hover {
+    transform: scale(1.2);
   }
 }
 
