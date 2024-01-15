@@ -4,6 +4,18 @@ import Header from "../components/Header";
 import DerivativesComponent from "../components/Derivatives";
 ---
 
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7M9FKP2465"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7M9FKP2465');
+  </script>
+</head>
+
 <Layout title="uwucrew: browse anime artists from all around the world 🎨">
   <main>
     <Header client:load />
