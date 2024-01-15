@@ -16,11 +16,11 @@ interface NavItemType {
 const navItems: NavItemType[] = [
   {
     label: "Art Gallery",
-    href: "/derivatives",
+    href: "/gallery",
   },
   {
     label: "Dressing Room",
-    href: "/dressing-room",
+    href: "https://dressingroom.uwucrew.art/",
   },
 ];
 

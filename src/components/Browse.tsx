@@ -11,74 +11,58 @@ interface UwuType {
   speed: number; // Percentage of scroll speed
   left: number; // Percentage of screen width
   top: number; // Percentage of screen height
+  over: boolean;
 }
 
 const uwus: UwuType[] = [
   {
     width: 25,
-    speed: 0.35,
-    left: 3,
-    top: -5,
-  },
-  {
-    width: 10,
-    speed: 0.7,
-    left: 75,
-    top: 15,
-  },
-  {
-    width: 18,
-    speed: 0.2,
-    left: 50,
-    top: 40,
-  },
-  {
-    width: 20,
-    speed: 0.35,
-    left: 78,
-    top: 60,
-  },
-  {
-    width: 15,
-    speed: 0.6,
-    left: 25,
-    top: 110,
+    speed: 0.25,
+    left: 8,
+    top: 2,
+    over: false,
   },
   {
     width: 25,
-    speed: 0.35,
-    left: -5,
-    top: 130,
-  },
-  {
-    width: 15,
-    speed: 0.6,
-    left: 75,
-    top: 180,
-  },
-  {
-    width: 13,
-    speed: 0.75,
-    left: 30,
-    top: 220,
-  },
-  {
-    width: 10,
-    speed: 1.4,
-    left: 50,
-    top: 400,
-  },
-  {
-    width: 40,
-    speed: 0.4,
-    left: 35,
-    top: 180,
+    speed: 0.15,
+    left: 42,
+    top: 22,
+    over: false,
   },
   {
     width: 20,
-    speed: 0.8,
-    left: 80,
-    top: 350,
+    speed: 0.35,
+    left: 75,
+    top: 65,
+    over: false,
+  },
+  {
+    width: 20,
+    speed: 0.51,
+    left: 23,
+    top: 115,
+    over: true,
+  },
+  {
+    width: 25,
+    speed: 0.375,
+    left: 1,
+    top: 120,
+    over: false,
+  },
+  {
+    width: 40,
+    speed: 0.39,
+    left: 35,
+    top: 170,
+    over: false,
+  },
+  {
+    width: 20,
+    speed: 0.6,
+    left: 78,
+    top: 250,
+    over: true,
   },
 ];
 
@@ -97,16 +81,17 @@ const Browse = () => {
     <Section id="browse">
       <div className="browse" ref={containerRef}>
         <div className="browse-content" style={fixedStyles}>
-          <h2 className="browse-header">Browse anime art from the community</h2>
+          <div className="browse-highlight" />
+          <h2 className="browse-header">browse artists from all over the world</h2>
           <Button
-            link="https://uwucrew.art/derivatives"
-            label="View derivative gallery"
+            link="https://uwucrew.art/gallery"
+            label="view the art gallery!"
           />
           {
             // Render uwus
             uwus.map((uwu, index) => {
               const { width, speed, left, top } = uwu;
-              const zIndex = speed > 0.5 ? 3 : 1;
+              const zIndex = uwu.over ? 3 : 1;
               const windowHeight = containerRef.current?.clientHeight || 0;
               const translateY = percentScrolled * speed * windowHeight;
               const style = {

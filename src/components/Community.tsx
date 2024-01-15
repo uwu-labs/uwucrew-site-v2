@@ -1,7 +1,7 @@
 import "./Community.css";
 import Section from "./Section";
 
-import logo from "../assets/icon.svg";
+import logo from "../assets/bunnyPrimary.png";
 import Button from "./Button";
 import {
   DISCORD_LINK,
@@ -24,56 +24,56 @@ import whiteDiscord from "../assets/socials/discord.svg";
 import { useEffect, useState } from "react";
 
 const imageOptions = [
-  "./Rho.png",
-  "./Naninna.avif",
-  "./Alice.avif",
-  "./Alice.jpg",
-  "./farah.png",
-  "./Farah.avif",
-  "./Liga.avif",
-  "./Vanaric.avif",
-  "./Fei.avif",
-  "./Tuwu.avif",
-  "./Touge.avif",
-  "./Josh (1).jpg",
-  "./JG.avif",
-  "./Vixpora.jpg",
-  "./Imp.avif",
-  "./Adam.avif",
-  "./Liga.jpg",
-  "./Touge.png",
-  "./Shin (1).avif",
-  "./Palis.png",
-  "./Imp.jpg",
-  "./JG.png",
-  "./Nate.avif",
-  "./Suhate.jpg",
-  "./Neetori.jpeg",
-  "./Tuwu.jpg",
-  "./Cloudy.jpg",
-  "./Vanaric.png",
-  "./Fei.jpg",
-  "./Vixpora.avif",
-  "./Pawwao.png",
-  "./Adam.png",
-  "./Nate.jpg",
-  "./Rho.avif",
-  "./Naninna.jpg",
-  "./Shiomu.avif",
-  "./Pawwao.avif",
-  "./Josh.jpg",
-  "./Jess (1).jpg",
-  "./shiomu.png",
-  "./stuwu.avif",
-  "./Suhate.avif",
-  "./stuwu.png",
-  "./Jess.jpg",
-  "./Cloudy.avif",
-  "./Benangbaja.avif",
-  "./Benanbaja.jpg",
-  "./Shin.avif",
-  "./Palis.avif",
-  "./Neetori.avif",
+  "Rho.png",
+  "Naninna.avif",
+  "Alice.avif",
+  "Alice.jpg",
+  "farah.png",
+  "Farah.avif",
+  "Liga.avif",
+  "Vanaric.avif",
+  "Fei.avif",
+  "Tuwu.avif",
+  "Touge.avif",
+  "Josh (1).jpg",
+  "JG.avif",
+  "Vixpora.jpg",
+  "Imp.avif",
+  "Adam.avif",
+  "Liga.jpg",
+  "Touge.png",
+  "Shin (1).avif",
+  "Palis.png",
+  "Imp.jpg",
+  "JG.png",
+  "Nate.avif",
+  "Suhate.jpg",
+  "Neetori.jpeg",
+  "Tuwu.jpg",
+  "Cloudy.jpg",
+  "Vanaric.png",
+  "Fei.jpg",
+  "Vixpora.avif",
+  "Pawwao.png",
+  "Adam.png",
+  "Nate.jpg",
+  "Rho.avif",
+  "Naninna.jpg",
+  "Shiomu.avif",
+  "Pawwao.avif",
+  "Josh.jpg",
+  "Jess (1).jpg",
+  "shiomu.png",
+  "stuwu.avif",
+  "Suhate.avif",
+  "stuwu.png",
+  "Jess.jpg",
+  "Cloudy.avif",
+  "Benangbaja.avif",
+  "Benanbaja.jpg",
+  "Shin.avif",
+  "Palis.avif",
+  "Neetori.avif",
 ];
 
 interface UwuType {
@@ -104,18 +104,13 @@ const uwus: UwuType[] = [
     size: 0.27,
   },
   {
-    top: 0.5,
-    side: 0.35,
-    size: 0.1,
-  },
-  {
     top: 0.65,
     side: 0.2,
     size: 0.18,
   },
   {
-    top: 0.75,
-    side: 0.5,
+    top: 0.85,
+    side: 0.3,
     size: 0.1,
   },
   {
@@ -127,24 +122,19 @@ const uwus: UwuType[] = [
 
 const mobileUwus: UwuType[] = [
   {
-    top: 0.45,
-    side: -0.05,
+    top: 0.1,
+    side: 0,
     size: 0.13,
   },
   {
-    top: 0.55,
-    side: 0.1,
-    size: 0.07,
+    top: 0.60,
+    side: 0,
+    size: 0.1,
   },
   {
-    top: 0.63,
+    top: 0.76,
     side: 0.02,
-    size: 0.06,
-  },
-  {
-    top: 0.71,
-    side: 0.067,
-    size: 0.07,
+    size: 0.09,
   },
 ];
 
@@ -161,14 +151,19 @@ const socials: SocialType[] = [
     icon: discord,
   },
   {
-    name: "Etherscan",
-    link: ETHERSCAN_LINK,
-    icon: etherscan,
+    name: "Twitter",
+    link: TWITTER_LINK,
+    icon: twitter,
   },
   {
     name: "Instagram",
     link: INSTAGRAM_LINK,
     icon: instagram,
+  },
+  {
+    name: "Etherscan",
+    link: ETHERSCAN_LINK,
+    icon: etherscan,
   },
   {
     name: "Medium",
@@ -179,11 +174,6 @@ const socials: SocialType[] = [
     name: "OpenSea",
     link: OPENSEA_LINK,
     icon: opensea,
-  },
-  {
-    name: "Twitter",
-    link: TWITTER_LINK,
-    icon: twitter,
   },
 ];
 
@@ -196,9 +186,11 @@ const Community = () => {
   useEffect(() => {
     // set at bottom if at bottom
     const handleScroll = () => {
+      const innerHeight = window.innerHeight;
+
       if (
-        window.innerHeight + window.scrollY >=
-        document.body.offsetHeight - 2
+        innerHeight + window.scrollY >=
+        document.body.offsetHeight - innerHeight
       ) {
         setAtBottom(true);
       }
@@ -227,15 +219,14 @@ const Community = () => {
           const secondIndex =
             (startIndex + index * 2 + 1) % imageOptions.length;
           return (
-            <>
+            <div key={index}>
               <div
-                key={firstIndex}
                 className={className}
                 style={{
-                  top: `${uwu.top * 100}vh`,
-                  left: `${uwu.side * 100}vh`,
-                  width: `${uwu.size * 100}vh`,
-                  height: `${uwu.size * 100}vh`,
+                  top: `${uwu.top * 100}dvh`,
+                  left: `${uwu.side * 100}dvh`,
+                  width: `${uwu.size * 100}dvh`,
+                  height: `${uwu.size * 100}dvh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
               >
@@ -246,13 +237,12 @@ const Community = () => {
                 />
               </div>
               <div
-                key={secondIndex}
                 className={className}
                 style={{
-                  top: `${uwu.top * 100}vh`,
-                  right: `${uwu.side * 100}vh`,
-                  width: `${uwu.size * 100}vh`,
-                  height: `${uwu.size * 100}vh`,
+                  top: `${uwu.top * 100}dvh`,
+                  right: `${uwu.side * 100}dvh`,
+                  width: `${uwu.size * 100}dvh`,
+                  height: `${uwu.size * 100}dvh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
               >
@@ -262,7 +252,7 @@ const Community = () => {
                   alt="uwu"
                 />
               </div>
-            </>
+            </div>
           );
         })}
 
@@ -276,15 +266,14 @@ const Community = () => {
           const secondIndex =
             (startIndex + index * 2 + 1) % imageOptions.length;
           return (
-            <>
+            <div key={index}>
               <div
-                key={firstIndex}
                 className={className}
                 style={{
-                  top: `${uwu.top * 100}vh`,
-                  left: `${uwu.side * 100}vh`,
-                  width: `${uwu.size * 100}vh`,
-                  height: `${uwu.size * 100}vh`,
+                  top: `${uwu.top * 100}dvh`,
+                  left: `${uwu.side * 100}dvh`,
+                  width: `${uwu.size * 100}dvh`,
+                  height: `${uwu.size * 100}dvh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
               >
@@ -295,13 +284,12 @@ const Community = () => {
                 />
               </div>
               <div
-                key={secondIndex}
                 className={className}
                 style={{
-                  top: `${uwu.top * 100}vh`,
-                  right: `${uwu.side * 100}vh`,
-                  width: `${uwu.size * 100}vh`,
-                  height: `${uwu.size * 100}vh`,
+                  top: `${uwu.top * 100}dvh`,
+                  right: `${uwu.side * 100}dvh`,
+                  width: `${uwu.size * 100}dvh`,
+                  height: `${uwu.size * 100}dvh`,
                   animationDelay: `${Math.random() * 1}s`,
                 }}
               >
@@ -311,7 +299,7 @@ const Community = () => {
                   alt="uwu"
                 />
               </div>
-            </>
+            </div>
           );
         })}
 
@@ -328,15 +316,13 @@ const Community = () => {
           </div>
           <Button
             link={DISCORD_LINK}
-            label="Join our Discord"
+            label="Join our Discord!"
             icon={whiteDiscord}
           />
         </div>
 
         {/* Footer */}
         <div className="community-footer">
-          <div className="community-footer-text">All rights reserved</div>
-          <div className="community-footer-text">{`© ${new Date().getFullYear()}`}</div>
           <div className="community-footer-socials">
             {socials.map((social) => (
               <a

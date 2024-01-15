@@ -46,7 +46,7 @@ const Blog = () => {
   return (
     <Section id="blog">
       <div className="blog">
-        <h2 className="blog-header">Blog</h2>
+        <h2 className="blog-header">wanna learn more?</h2>
         <div className="blog-posts">
           {
             // Render blog posts
@@ -76,7 +76,7 @@ const Blog = () => {
         <Button
           primary
           link={MIRROR_LINK}
-          label="View all blog posts on Mirror"
+          label="check out our blog!"
         />
       </div>
     </Section>

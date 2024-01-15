@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header";
+import DerivativesComponent from "../components/Derivatives";
+---
+
+<Layout title="uwucrew: browse anime artists from all around the world 🎨">
+  <main>
+    <Header client:load />
+    <DerivativesComponent client:idle />
+  </main>
+</Layout>
+
+<style>
+  main {
+    position: relative;
+    width: 100vw;
+    height: 100dvh;
+    overflow-x: hidden;
+    background: linear-gradient(
+      180deg,
+      #f5dce8 0%,
+      #fcfdff 8.33%,
+      #fcfdff 88.02%,
+      #f5dce8 100%
+    );
+  }
+
+  @media (max-width: 900px) {
+    main {
+      height: auto;
+    }
+  }
+</style>

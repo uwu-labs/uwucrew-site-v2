@@ -8,16 +8,13 @@ import uwu2 from "../assets/why/02.jpg";
 import uwu3 from "../assets/why/03.jpg";
 import useFixedStyles from "../hooks/use-scroll-data";
 
-const images = [uwu1, uwu2, uwu3];
+const imageCredits = ["@edaelec", "@KRY_Peach", "@tsuru_oden"];
 
 const Why = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { fixedStyles, percentScrolled } = useFixedStyles(containerRef);
 
-  const image = Math.min(
-    Math.floor(percentScrolled * images.length),
-    images.length - 1
-  );
+  let image = percentScrolled < 0.3 ? 0 : percentScrolled < 0.75 ? 1 : 2;
 
   return (
     <Section id="why">
@@ -25,28 +22,54 @@ const Why = () => {
         <div className="why-fixed" style={fixedStyles}>
           <div className="why-gradient" />
           <div className="why-fixed-image-container">
-            <img src={images[image]} alt="uwu" className="why-fixed-image" />
+            <img
+              src={uwu1}
+              alt="uwu"
+              className={`why-fixed-image ${image == 0 ? "why-active" : ""}`}
+            />
+            <img
+              src={uwu2}
+              alt="uwu"
+              className={`why-fixed-image ${image == 1 ? "why-active" : ""}`}
+            />
+            <img
+              src={uwu3}
+              alt="uwu"
+              className={`why-fixed-image ${image == 2 ? "why-active" : ""}`}
+            />
+            <div className="why-image-credit">{imageCredits[image]}</div>
           </div>
         </div>
         <div className="why-content">
-          <h1 className="why-header">Why uwucrew?</h1>
-          <img className="why-image" src={uwu1} alt="uwu" />
-          <h2 className="why-sub-header">Discover a world of creativity</h2>
+          <h1 className="why-header">Why uwucrew?!</h1>
+          <div className="why-image-container">
+            <img className="why-image" src={uwu1} alt="uwu" />
+            <div className="why-image-credit">{imageCredits[0]}</div>
+          </div>
+          <h2 className="why-sub-header">Uniting the world, through art 🌏</h2>
           <p className="why-text">
-            Unlock a vibrant and artistic world and get to know the 250+ artists
-            in the uwu community!
+            Fall down a rabbit hole of creativity and be part of our global
+            community, including over 250+ anime artists!
           </p>
-          <img className="why-image" src={uwu2} alt="uwu" />
-          <h2 className="why-sub-header">Join the anime art movement</h2>
+          <div className="why-image-container">
+            <img className="why-image" src={uwu2} alt="uwu" />
+            <div className="why-image-credit">{imageCredits[1]}</div>
+          </div>
+          <h2 className="why-mid-sub-header">
+            Join The Anime Art Revolution! 🚀
+          </h2>
           <p className="why-text">
-            Join a movement to highlight creativity and make a lasting impact on
-            anime art by discovering and connecting with artists!
+            Participate in the anime wave that's defining our generation! Lets
+            create a culture that values creativity, together~
           </p>
-          <img className="why-image" src={uwu3} alt="uwu" />
-          <h2 className="why-sub-header">Become a member of the uwuminati</h2>
+          <div className="why-image-container">
+            <img className="why-image" src={uwu3} alt="uwu" />
+            <div className="why-image-credit">{imageCredits[2]}</div>
+          </div>
+          <h2 className="why-mid-sub-header">Enter... the uwuminati 😎</h2>
           <p className="why-text">
-            Gain access to the uwuminati holder-only chat and form meaningful
-            connections with fellow anime fans and creators!
+            Discover a crew of like-minded people inspired by anime and building
+            their own digital art collection!
           </p>
           <div className="why-buffer" />
         </div>
