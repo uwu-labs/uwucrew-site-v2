@@ -45,7 +45,7 @@ const Why = () => {
           <h1 className="why-header">Why uwucrew?!</h1>
           <div className="why-image-container">
             <img className="why-image" src={uwu1} alt="uwu" />
-            <div className="why-image-credit">Chungus</div>
+            <div className="why-image-credit">Chungus1</div>
           </div>
           <h2 className="why-sub-header">Uniting the world, through art 🌏</h2>
           <p className="why-text">
@@ -54,7 +54,7 @@ const Why = () => {
           </p>
           <div className="why-image-container">
             <img className="why-image" src={uwu2} alt="uwu" />
-            <div className="why-image-credit">Chungus</div>
+            <div className="why-image-credit">Chungus2</div>
           </div>
           <h2 className="why-mid-sub-header">
             Join The Anime Art Revolution! 🚀
@@ -65,7 +65,7 @@ const Why = () => {
           </p>
           <div className="why-image-container">
             <img className="why-image" src={uwu3} alt="uwu" />
-            <div className="why-image-credit">Chungus</div>
+            <div className="why-image-credit">Chungus3</div>
           </div>
           <h2 className="why-mid-sub-header">Enter... the uwuminati 😎</h2>
           <p className="why-text">
