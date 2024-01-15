@@ -8,14 +8,13 @@ import uwu2 from "../assets/why/02.jpg";
 import uwu3 from "../assets/why/03.jpg";
 import useFixedStyles from "../hooks/use-scroll-data";
 
-const images = [uwu1, uwu3];
-const imageCredits = ["Chungus1", "Chungus2", "Chungus3"];
+const imageCredits = ["@edaelec", "@KRY_Peach", "@tsuru_oden"];
 
 const Why = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { fixedStyles, percentScrolled } = useFixedStyles(containerRef);
 
-  let image = percentScrolled < 0.25 ? 0 : percentScrolled < 0.75 ? 1 : 2;
+  let image = percentScrolled < 0.3 ? 0 : percentScrolled < 0.75 ? 1 : 2;
 
   return (
     <Section id="why">
@@ -45,7 +44,7 @@ const Why = () => {
           <h1 className="why-header">Why uwucrew?!</h1>
           <div className="why-image-container">
             <img className="why-image" src={uwu1} alt="uwu" />
-            <div className="why-image-credit">Chungus1</div>
+            <div className="why-image-credit">{imageCredits[0]}</div>
           </div>
           <h2 className="why-sub-header">Uniting the world, through art 🌏</h2>
           <p className="why-text">
@@ -54,7 +53,7 @@ const Why = () => {
           </p>
           <div className="why-image-container">
             <img className="why-image" src={uwu2} alt="uwu" />
-            <div className="why-image-credit">Chungus2</div>
+            <div className="why-image-credit">{imageCredits[1]}</div>
           </div>
           <h2 className="why-mid-sub-header">
             Join The Anime Art Revolution! 🚀
@@ -65,7 +64,7 @@ const Why = () => {
           </p>
           <div className="why-image-container">
             <img className="why-image" src={uwu3} alt="uwu" />
-            <div className="why-image-credit">Chungus3</div>
+            <div className="why-image-credit">{imageCredits[2]}</div>
           </div>
           <h2 className="why-mid-sub-header">Enter... the uwuminati 😎</h2>
           <p className="why-text">
