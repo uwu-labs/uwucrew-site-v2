@@ -16,7 +16,7 @@ import catinkleins from "../assets/team/catinkleins.png";
 import laurDeriv from "../assets/team/derivatives/laur.png";
 import kiwiDeriv from "../assets/team/derivatives/kiwi.jpg";
 import morelloDeriv from "../assets/team/derivatives/morello.png";
-// import chaseDeriv from "../assets/team/derivatives/danny.png";
+import chaseDeriv from "../assets/team/derivatives/chase.png";
 import omarDeriv from "../assets/team/derivatives/omar.png";
 import dannyDeriv from "../assets/team/derivatives/danny.png";
 // import ninesDeriv from "../assets/team/derivatives/danny.png";
@@ -119,6 +119,8 @@ const members: TeamMemberType[] = [
     role: "web Dev",
     image: chase,
     twitter: "https://twitter.com/chase_manning_",
+    deriv: chaseDeriv,
+    derivArtist: "@shinjuroueth",
   },
 ];
 
