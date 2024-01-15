@@ -40,12 +40,9 @@
 
 .blog-post {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  overflow: hidden;
-  border-radius: 2.4rem;
 }
 
 .blog-post:hover .blog-post-image {
@@ -55,6 +52,8 @@
 .blog-post-image {
   width: 100%;
   transition: transform 0.3s ease-in-out;
+  border-top-right-radius: 2.4rem;
+  border-top-left-radius: 2.4rem;
 }
 
 .blog-post-content {
@@ -64,6 +63,8 @@
   align-items: flex-start;
   background: #1d1f22;
   flex: 1;
+  border-bottom-right-radius: 2.4rem;
+  border-bottom-left-radius: 2.4rem;
 
   @media (max-width: 900px) {
     padding: 2.4rem;

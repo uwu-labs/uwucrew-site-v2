@@ -1,11 +1,13 @@
 import { MutableRefObject, useEffect, useState } from "react";
 
+const FPS = 20;
+
 const useScrollData = (containerRef: MutableRefObject<HTMLDivElement>) => {
   const [location, setLocation] = useState<"above" | "in" | "below">("above");
   const [percentScrolled, setPercentScrolled] = useState(0);
 
   const onScroll = () => {
-    if (!containerRef || !containerRef.current) return false;
+    if (!containerRef || !containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
     let location_;
     if (rect.top > 0) location_ = "above";
@@ -23,9 +25,7 @@ const useScrollData = (containerRef: MutableRefObject<HTMLDivElement>) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
+    setInterval(onScroll, 1000 / FPS);
   }, []);
 
   const fixedStyles = {
