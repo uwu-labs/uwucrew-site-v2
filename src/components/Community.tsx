@@ -122,19 +122,19 @@ const uwus: UwuType[] = [
 
 const mobileUwus: UwuType[] = [
   {
-    top: 0.3,
-    side: -0.05,
+    top: 0.1,
+    side: 0,
     size: 0.13,
   },
   {
-    top: 0.63,
+    top: 0.60,
     side: 0,
-    size: 0.06,
+    size: 0.1,
   },
   {
     top: 0.76,
     side: 0.02,
-    size: 0.07,
+    size: 0.09,
   },
 ];
 
