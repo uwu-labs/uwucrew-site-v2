@@ -24,8 +24,10 @@
   justify-content: flex-end;
   flex-direction: column;
   overflow: hidden;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .browse-content {
     padding: 4rem 2.4rem;
   }
 }
@@ -47,8 +49,10 @@
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   filter: blur(200px);
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .browse-highlight {
     left: 0;
     width: 100%;
   }
@@ -62,8 +66,10 @@
   letter-spacing: -0.088rem;
   margin-bottom: 2.4rem;
   max-width: 81.4rem;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .browse-header {
     font-size: 4.8rem;
     margin-bottom: 3.2rem;
     max-width: none;
@@ -77,8 +83,10 @@
 
 .browse-image {
   width: 100%;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .browse-image {
     transform: scale(2.5);
     transform-origin: top center;
   }

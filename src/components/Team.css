@@ -5,8 +5,10 @@
   align-items: center;
   padding: 13rem 8rem;
   background: linear-gradient(203deg, #f4f5f6 0%, #a7e6f1 100%);
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .team {
     padding: 6.4rem 2.4rem;
     background: linear-gradient(
       180deg,
@@ -23,8 +25,10 @@
   font-size: 6.4rem;
   font-weight: 800;
   margin-bottom: 6.5rem;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .team-header {
     font-size: 4.8rem;
     margin-bottom: 4.8rem;
   }
@@ -37,8 +41,10 @@
   grid-row-gap: 9rem;
   width: 100%;
   max-width: 130rem;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .team-members {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.6rem;
     grid-row-gap: 4.8rem;
@@ -63,8 +69,10 @@
   border-radius: 2.4rem;
   overflow: hidden;
   margin-bottom: 1.5rem;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .team-member-image-container {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.6rem;
     border-radius: 1.12rem;
@@ -148,8 +156,10 @@
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .team-member-name {
     font-size: 2rem;
     margin-bottom: 0.8rem;
   }
@@ -159,8 +169,10 @@
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .team-member-title {
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
   }
@@ -169,8 +181,10 @@
 .team-member-socials {
   display: flex;
   grid-gap: 0.6rem;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .team-member-socials {
     grid-gap: 1rem;
   }
 }
@@ -186,8 +200,10 @@
 
 .team-member-social-image {
   height: 2.4rem;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .team-member-social-image {
     height: 2rem;
   }
 }

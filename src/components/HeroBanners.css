@@ -4,8 +4,10 @@
   flex-direction: column;
   padding-top: 4.6dvh;
   overflow: hidden;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .hero-banners {
     padding-top: 1.6rem;
   }
 }
@@ -23,17 +25,18 @@
   width: calc(((100dvh - 369px) * 0.4 + 2.4rem) * 40);
   display: flex;
   margin-bottom: 2.4rem;
-
   animation: slide-right 90s linear infinite;
-
-  @media (max-width: 900px) {
-    width: calc((17rem + 1.6rem) * 40);
-    margin-bottom: 1.6rem;
-  }
 }
 
 .banner-top:hover {
   animation-play-state: paused;
+}
+
+@media (max-width: 900px) {
+  .banner-top {
+    width: calc((17rem + 1.6rem) * 40);
+    margin-bottom: 1.6rem;
+  }
 }
 
 @keyframes slide-left {
@@ -49,17 +52,18 @@
   width: calc(((100dvh - 369px) * 0.4 + 2.4rem) * 40);
   display: flex;
   margin-bottom: 2.4rem;
-
   animation: slide-left 90s linear infinite;
-
-  @media (max-width: 900px) {
-    width: calc((17rem + 1.6rem) * 40);
-    margin-bottom: 1.6rem;
-  }
 }
 
 .banner-bottom:hover {
   animation-play-state: paused;
+}
+
+@media (max-width: 900px) {
+  .banner-bottom {
+    width: calc((17rem + 1.6rem) * 40);
+    margin-bottom: 1.6rem;
+  }
 }
 
 .uwu-container {
@@ -68,23 +72,37 @@
   margin: 0 1.2rem;
   overflow: hidden;
   border-radius: 2.4rem;
-
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
-
-  @media (max-width: 900px) {
-    height: 17rem;
-    width: 17rem;
-    margin: 0 0.8rem;
-  }
 }
 
 .uwu-container:hover {
   transform: scale(1.15);
   z-index: 10;
+}
 
-  @media (max-width: 900px) {
+
+@media (max-width: 900px) {
+  .uwu-container {
+    height: 16rem;
+    width: 16rem;
+    margin: 0 0.8rem;
+  }
+
+  .uwu-container:hover {
     transform: scale(1.15);
+  }
+}
+
+@media (max-width: 700px) {
+  .uwu-container {
+    height: 12rem;
+    width: 12rem;
+    margin: 0 0.8rem;
+  }
+
+  .uwu-container:hover {
+    transform: scale(1.2);
   }
 }
 
