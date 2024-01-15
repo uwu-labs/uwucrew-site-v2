@@ -4294,14 +4294,6 @@ const derivatives: DerivativeType[] = [
 		id: 28
 	},
 	{
-		artistName: 'asteroid_ill',
-		artistLink: 'https://twitter.com/asteroid_ill',
-		image: 'https://pbs.twimg.com/media/FcxadxGaIAUPVUy?format=jpg&name=900x900',
-		post: 'https://twitter.com/asteroid_ill/status/1570729920711766019',
-		date: '9/16/2022',
-		id: 3209
-	},
-	{
 		artistName: 'RhoXifer',
 		artistLink: 'https://twitter.com/RhoXifer',
 		image: 'https://pbs.twimg.com/media/FdqvJ7iaIAMmqIH?format=jpg&name=large',
@@ -5222,14 +5214,6 @@ const derivatives: DerivativeType[] = [
 		artistName: 'Jessica',
 		artistLink: 'https://twitter.com/BlancNFT',
 		image: 'https://pbs.twimg.com/media/FmJM2XaacAA1Nn9?format=jpg&name=large',
-		post: 'https://twitter.com/kafkakafka74/status/1612936123470446592',
-		date: '1/10/2023',
-		id: 9298
-	},
-	{
-		artistName: 'Jules Blanc',
-		artistLink: 'https://twitter.com/BlancNFT',
-		image: 'https://pbs.twimg.com/media/FmJM2xFagAAOlpO?format=jpg&name=large',
 		post: 'https://twitter.com/kafkakafka74/status/1612936123470446592',
 		date: '1/10/2023',
 		id: 9298
@@ -6529,13 +6513,6 @@ const derivatives: DerivativeType[] = [
 		post: "https://twitter.com/uwucrewnft/status/1657107816325283845",
 		date: "5/10/2023",
 		id: 5005
-	},
-	{
-		artistName: "Shiro",
-		artistLink: "https://twitter.com/_shiro0x",
-		image: "https://pbs.twimg.com/media/FvhXctXWYAQQ05d?format=jpg&name=medium",
-		post: "https://twitter.com/dmvorozh/status/1655169034906660864",
-		date: "5/7/2023"
 	},
 	{
 		artistName: "HTT",
