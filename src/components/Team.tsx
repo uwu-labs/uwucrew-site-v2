@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from "react";
 import Section from "./Section";
 import "./Team.css";
 
@@ -122,14 +123,67 @@ const members: TeamMemberType[] = [
 ];
 
 const Team = () => {
+  const [hoverStatus, setHoverStatus] = useState(
+    Array(members.length).fill(false)
+  );
+  const sectionRef = useRef(null);
+
+  const cascadeEffect = (targetState) => {
+    let delay = 0;
+    hoverStatus.forEach((_, index) => {
+      setTimeout(() => {
+        setHoverStatus((prevStatus) => {
+          const newStatus = [...prevStatus];
+          newStatus[index] = targetState;
+          return newStatus;
+        });
+      }, delay);
+      delay += 250;
+    });
+    return delay;
+  };
+
+  const toggleEffect = () => {
+    const totalDelayForFirstCascade = cascadeEffect(true);
+    setTimeout(() => {
+      cascadeEffect(false);
+    }, totalDelayForFirstCascade + 1000);
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            toggleEffect();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [sectionRef, members.length]);
+
   return (
     <Section id="team">
-      <div className="team">
+      <div className="team" ref={sectionRef}>
         <h2 className="team-header">our team</h2>
         <div className="team-members">
           {members.map((member, index) => {
             return (
-              <div className="team-member" key={index}>
+              <div
+                className={`team-member ${hoverStatus[index] ? "active" : ""}`}
+                key={index}
+              >
                 <div className="team-member-image-container">
                   <img
                     src={member.image}
