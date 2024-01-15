@@ -609,13 +609,6 @@ const derivatives: DerivativeType[] = [
 		artistLink: 'https://twitter.com/takeshi_tenma'
 	},
 	{
-		image: 'https://pbs.twimg.com/media/FFZKBwCX0AEBc5G?format=jpg&name=large',
-		id: 3209,
-		post: 'https://twitter.com/morellostorment/status/1465440396448784385?s=20',
-		artistName: 'Yu-dachi',
-		artistLink: 'https://twitter.com/thx_r308'
-	},
-	{
 		image: 'https://pbs.twimg.com/media/FFsphzbVgAQeAaI?format=png&name=large',
 		id: 9664,
 		post: 'https://twitter.com/fungibleartist/status/1466811888331726850?s=20',
@@ -1097,13 +1090,6 @@ const derivatives: DerivativeType[] = [
 		post: 'https://twitter.com/hiragikirara/status/1479394222960967681',
 		artistName: '柊きらら',
 		artistLink: 'https://twitter.com/hiragikirara'
-	},
-	{
-		image: 'https://pbs.twimg.com/media/FHZppIpXoAQBe6Q?format=jpg&name=900x900',
-		id: 3209,
-		post: 'https://twitter.com/morellostorment/status/1474485067959394315',
-		artistName: 'samjoko//',
-		artistLink: 'https://twitter.com/samjoko__'
 	},
 	{
 		image: 'https://twitter.com/PepeCloverNFT/status/1459696889981329408?s=20',
@@ -3239,14 +3225,6 @@ const derivatives: DerivativeType[] = [
 		post: 'https://twitter.com/tomhaverford24/status/1519008021531467777',
 		date: '4/26/2022',
 		id: 3489
-	},
-	{
-		artistName: 'Tanpopo',
-		artistLink: 'twitter.com/Tanpopo_NFT',
-		image: 'https://pbs.twimg.com/media/FRhSpSjacAEncEy?format=jpg&name=small',
-		post: 'https://twitter.com/Tanpopo_NFT/status/1520056513288900608',
-		date: '4/29/2022',
-		id: 3209
 	},
 	{
 		artistName: 'Tani',
