@@ -19,9 +19,9 @@ const blogPosts: BlogPostType[] = [
   {
     image: blog1,
     date: "JAN 15, 2023",
-    title: "uwu Labs x IROIRO: an uwu Labs Family project",
+    title: "IROIRO: an uwu Labs Family project",
     description:
-      "IROIRO is the 5th uwu Labs Family project! We're incredibly excited to work with their founding company CyberZ and Sashimi as their artist!",
+      "IROIRO is the 5th project to be part of the uwu Labs Family! We're incredibly excited to work with their founding company CyberZ and Sashimi as their artist!",
     mirrorId: "_vFRUoPS6eeV3vpRYyjdYcqW6ZGkGTaCWItxQevt_Lw",
   },
   {
@@ -29,7 +29,7 @@ const blogPosts: BlogPostType[] = [
     date: "MAY 28, 2022",
     title: "Artist Megacollab: Systema Solaris",
     description:
-      "Systema Solaris is our first Artist Megacollab, where nine Solar System themed pieces will be auctioned off on Foundation!",
+      "Systema Solaris was our 1st Artist Megacollab, where 9 Solar System themed pieces from 9 different artists were auctioned off on Foundation!",
     mirrorId: "_R5xzweyufF3uUaFeTUr_vgmIJ--XPvaKNWA2ajUmXg",
   },
   {
@@ -37,7 +37,7 @@ const blogPosts: BlogPostType[] = [
     date: "MAY 3, 2022",
     title: "The uwu Art License + Community Collection",
     description:
-      "Today, uwulabs is excited to share the uwu art license. It’s designed to encourage derivative works but also respect the holder’s rights, as we believe their NFT is a representation of them!",
+      "uwucrew uses the uwu art license. It’s designed to encourage derivative works but also respect the holder’s rights, as we believe their NFT is a representation of them!",
     mirrorId: "DwrrmMYgsUT0mXsMEvbWBoLtnKcW0TRKOpwUWjDbZXg",
   },
 ];
