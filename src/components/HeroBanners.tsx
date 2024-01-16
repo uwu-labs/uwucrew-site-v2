@@ -94,7 +94,7 @@ const HeroBanners = () => {
         {[...top, ...top].map((uwu, index) => {
           return (
             <div className="uwu-container" key={index}>
-              <img src={uwu} alt="uwu" className="uwu" />
+              <img src={uwu} alt="uwu" className="uwu" loading={index < 10 ? "eager" : "lazy"} />
             </div>
           );
         })}
@@ -103,7 +103,7 @@ const HeroBanners = () => {
         {[...bottom, ...bottom].map((uwu, index) => {
           return (
             <div className="uwu-container" key={index}>
-              <img src={uwu} alt="uwu" className="uwu" />
+              <img src={uwu} alt="uwu" className="uwu" loading={index < 10 ? "eager" : "lazy"} />
             </div>
           );
         })}
