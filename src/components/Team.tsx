@@ -195,6 +195,7 @@ const Team = () => {
                   <img
                     src={member.image}
                     alt={member.name}
+                    loading="eager"
                     className="team-member-image"
                   />
                   {member.deriv ? (

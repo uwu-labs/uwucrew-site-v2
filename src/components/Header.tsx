@@ -31,7 +31,7 @@ const Header = () => {
     <div className="header">
       <div className="section">
         <a href="/">
-          <img className="logo" src={logo} alt="uwucrew logo" />
+          <img className="logo" src={logo} alt="uwucrew logo"  loading="eager" />
         </a>
         <div className="nav-items">
           {navItems.map((navItem) => (
@@ -50,6 +50,7 @@ const Header = () => {
       >
         <img
           className="header-hamburger-icon"
+          loading="eager"
           src={hamburger}
           alt="hamburger menu"
         />

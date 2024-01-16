@@ -21,7 +21,7 @@ const HeroContent = () => {
                 rel="noreferrer"
                 key={social.name}
               >
-                <img className="social" src={social.image} alt={social.name} />
+                <img className="social" src={social.image} alt={social.name} loading="eager" />
               </a>
             ))}
           </div>
@@ -45,7 +45,7 @@ const HeroContent = () => {
                 rel="noreferrer"
                 key={social.name}
               >
-                <img className="social" src={social.image} alt={social.name} />
+                <img className="social" src={social.image} alt={social.name} loading="eager"/>
               </a>
             ))}
           </div>
