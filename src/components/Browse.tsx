@@ -162,7 +162,14 @@ const Browse = () => {
                   style={style}
                 >
                   <img className="browse-image" src={image} alt="uwu" />
-                  <div className="browse-image-credit">{artists[uwuIndex-1]}</div>
+                  <a 
+                    href={`https://twitter.com/${artists[uwuIndex-1]}`}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="browse-image-credit"
+                  >
+                    {artists[uwuIndex-1]}
+                  </a>
                 </div>
               );
             })

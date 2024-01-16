@@ -37,14 +37,28 @@ const Why = () => {
               alt="uwu"
               className={`why-fixed-image ${image == 2 ? "why-active" : ""}`}
             />
-            <div className="why-image-credit">{imageCredits[image]}</div>
+            <a 
+              href={`https://twitter.com/${imageCredits[image]}`} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="why-image-credit"
+            >
+              {imageCredits[image]}
+            </a>
           </div>
         </div>
         <div className="why-content">
           <h1 className="why-header">Why uwucrew?!</h1>
           <div className="why-image-container">
             <img className="why-image" src={uwu1} alt="uwu" />
-            <div className="why-image-credit">{imageCredits[0]}</div>
+            <a 
+              href={`https://twitter.com/${imageCredits[0]}`} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="why-image-credit"
+            >
+              {imageCredits[0]}
+            </a>
           </div>
           <h2 className="why-sub-header">Uniting the world, through art 🌏</h2>
           <p className="why-text">
@@ -53,7 +67,14 @@ const Why = () => {
           </p>
           <div className="why-image-container">
             <img className="why-image" src={uwu2} alt="uwu" />
-            <div className="why-image-credit">{imageCredits[1]}</div>
+            <a 
+              href={`https://twitter.com/${imageCredits[1]}`} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="why-image-credit"
+            >
+              {imageCredits[1]}
+            </a>
           </div>
           <h2 className="why-mid-sub-header">
             Join The Anime Art Revolution! 🚀
@@ -64,7 +85,14 @@ const Why = () => {
           </p>
           <div className="why-image-container">
             <img className="why-image" src={uwu3} alt="uwu" />
-            <div className="why-image-credit">{imageCredits[2]}</div>
+            <a 
+              href={`https://twitter.com/${imageCredits[2]}`} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="why-image-credit"
+            >
+              {imageCredits[2]}
+            </a>
           </div>
           <h2 className="why-mid-sub-header">Enter... the uwuminati 😎</h2>
           <p className="why-text">

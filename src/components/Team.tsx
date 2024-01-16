@@ -21,6 +21,7 @@ import omarDeriv from "../assets/team/derivatives/omar.png";
 import dannyDeriv from "../assets/team/derivatives/danny.png";
 import ninesDeriv from "../assets/team/derivatives/nines.png";
 import julesDeriv from "../assets/team/derivatives/jules.png";
+import cucuDeriv from "../assets/team/derivatives/cucu.jpg";
 import catinkleinsDeriv from "../assets/team/derivatives/catinkleins.png";
 
 import twitter from "../assets/socials/team/twitter.svg";
@@ -107,6 +108,8 @@ const members: TeamMemberType[] = [
     image: cucurbit,
     twitter: "https://twitter.com/PiperCucu",
     foundation: "https://foundation.app/@milky.eth",
+    deriv: cucuDeriv,
+    derivArtist: "@hj_36_"
   },
   {
     name: "CatInKleins",
@@ -197,9 +200,14 @@ const Team = () => {
                   {member.deriv ? (
                     <div className="team-member-image-overlay">
                       <img src={member.deriv} alt={member.derivArtist} />
-                      <div className="team-member-image-overlay-credit">
+                      <a 
+                        href={`https://twitter.com/${member.derivArtist}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="team-member-image-overlay-credit"
+                      >
                         {member.derivArtist}
-                      </div>
+                      </a>
                     </div>
                   ) : (
                     <div className="team-member-image-overlay">
