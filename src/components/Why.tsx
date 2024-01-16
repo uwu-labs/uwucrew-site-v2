@@ -67,7 +67,7 @@ const Why = () => {
             community, including over 250+ anime artists!
           </p>
           <div className="why-image-container">
-            <img className="why-image" src={uwu2} alt="uwu" />
+            <img className="why-image" src={uwu2} alt="uwu" loading="eager" />
             <a 
               href={`https://twitter.com/${imageCredits[1]}`} 
               target="_blank" 
@@ -85,7 +85,7 @@ const Why = () => {
             create a culture that values creativity, together~
           </p>
           <div className="why-image-container">
-            <img className="why-image" src={uwu3} alt="uwu" />
+            <img className="why-image" src={uwu3} alt="uwu" loading="eager" />
             <a 
               href={`https://twitter.com/${imageCredits[2]}`} 
               target="_blank" 

@@ -156,10 +156,10 @@
 }
 
 .why-image {
-  display: none;
   width: 100%;
   border-radius: 2.4rem;
   max-height: 40rem;
+  min-height: 10rem;
   object-fit: cover;
   object-position: top;
 }
