@@ -3,12 +3,13 @@ import "./Button.css";
 interface Props {
   action?: () => void;
   link?: string;
+  outLink?: string;
   label: string;
   icon?: string;
   primary?: boolean;
 }
 
-const Button = ({ label, action, icon, link, primary }: Props) => {
+const Button = ({ label, action, icon, link, outLink, primary }: Props) => {
   const content = (
     <>
       {icon && <img className="icon" src={icon} alt={label} />}
@@ -25,7 +26,12 @@ const Button = ({ label, action, icon, link, primary }: Props) => {
         </button>
       )}
       {link && (
-        <a className={className} href={link} target="_blank" rel="noreferrer">
+        <a className={className} href={link}>
+          {content}
+        </a>
+      )}
+      {outLink && (
+        <a className={className} href={outLink} target="_blank" rel="noreferrer">
           {content}
         </a>
       )}

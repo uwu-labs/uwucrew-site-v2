@@ -33,7 +33,7 @@ const HeroContent = () => {
           </p>
           <Button
             label="Visit our Discord!"
-            link={DISCORD_LINK}
+            outLink={DISCORD_LINK}
             icon={discordIcon}
           />
           <div className="socials-container-mobile">

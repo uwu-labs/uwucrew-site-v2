@@ -3,9 +3,9 @@ import "./Why.css";
 import Section from "./Section";
 import { useRef } from "react";
 
-import uwu1 from "../assets/why/01.jpg";
-import uwu2 from "../assets/why/02.jpg";
-import uwu3 from "../assets/why/03.jpg";
+import uwu1 from "../assets/why/01.webp";
+import uwu2 from "../assets/why/02.webp";
+import uwu3 from "../assets/why/03.webp";
 import useFixedStyles from "../hooks/use-scroll-data";
 
 const imageCredits = ["@edaelec", "@KRY_Peach", "@tsuru_oden"];

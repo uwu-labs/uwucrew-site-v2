@@ -42,7 +42,7 @@ const Header = () => {
         </div>
       </div>
       <div className="header-buy-on-opensea">
-        <Button label="Buy on OpenSea" link={OPENSEA_LINK} icon={opensea} />
+        <Button label="Buy on OpenSea" outLink={OPENSEA_LINK} icon={opensea} />
       </div>
       <button
         className="header-hamburger"
@@ -71,7 +71,7 @@ const Header = () => {
               <div className="header-hamburger-button-container">
                 <Button
                   label="Buy on OpenSea"
-                  link={OPENSEA_LINK}
+                  outLink={OPENSEA_LINK}
                   icon={opensea}
                 />
               </div>

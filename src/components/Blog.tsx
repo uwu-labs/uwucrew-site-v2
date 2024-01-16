@@ -1,9 +1,9 @@
 import "./Blog.css";
 import Section from "./Section";
 
-import blog1 from "../assets/blog/01.png";
-import blog3 from "../assets/blog/03.png";
-import blog6 from "../assets/blog/06.png";
+import blog1 from "../assets/blog/01.webp";
+import blog3 from "../assets/blog/03.webp";
+import blog6 from "../assets/blog/06.webp";
 import Button from "./Button";
 import { MIRROR_LINK } from "../app/globals";
 
@@ -75,7 +75,7 @@ const Blog = () => {
         </div>
         <Button
           primary
-          link={MIRROR_LINK}
+          outLink={MIRROR_LINK}
           label="check out our blog!"
         />
       </div>

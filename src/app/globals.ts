@@ -5,12 +5,6 @@ import openseaLogo from "../assets/socials/sub/opensea.svg";
 import mediumLogo from "../assets/socials/sub/medium.svg";
 import etherscanLogo from "../assets/socials/sub/etherscan.svg";
 
-const PROJECT = "uwucrew-thumbnails";
-const STORAGE_URL = `https://firebasestorage.googleapis.com/v0/b/${PROJECT}/o/`;
-export const uwuImage = (uwuId: number) => {
-  return `${STORAGE_URL}${uwuId.toString()}.png?alt=media`;
-};
-
 // Constants
 export const ADDRESS = "0xf75140376d246d8b1e5b8a48e3f00772468b3c0c";
 

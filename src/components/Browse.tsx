@@ -136,7 +136,7 @@ const Browse = () => {
           <div className="browse-highlight" />
           <h2 className="browse-header">browse artists from all over the world</h2>
           <Button
-            link="https://uwucrew.art/gallery"
+            link="/gallery"
             label="view the art gallery!"
           />
           {
@@ -154,7 +154,7 @@ const Browse = () => {
                 zIndex,
               };
               const uwuIndex = ((index + offset) % UWU_OPTIONS) + 1;
-              const image = `/assets/browse/${uwuIndex}.jpg`;
+              const image = `/assets/browse/${uwuIndex}.webp`;
               return (
                 <div
                   key={index}

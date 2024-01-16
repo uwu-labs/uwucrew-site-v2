@@ -1,7 +1,7 @@
 import "./Community.css";
 import Section from "./Section";
 
-import logo from "../assets/bunnyPrimary.png";
+import logo from "../assets/bunnyPrimary.webp";
 import Button from "./Button";
 import {
   DISCORD_LINK,
@@ -24,56 +24,56 @@ import whiteDiscord from "../assets/socials/discord.svg";
 import { useEffect, useState } from "react";
 
 const imageOptions = [
-  "Rho.png",
-  "Naninna.avif",
-  "Alice.avif",
-  "Alice.jpg",
-  "farah.png",
-  "Farah.avif",
-  "Liga.avif",
-  "Vanaric.avif",
-  "Fei.avif",
-  "Tuwu.avif",
-  "Touge.avif",
-  "Josh (1).jpg",
-  "JG.avif",
-  "Vixpora.jpg",
-  "Imp.avif",
-  "Adam.avif",
-  "Liga.jpg",
-  "Touge.png",
-  "Shin (1).avif",
-  "Palis.png",
-  "Imp.jpg",
-  "JG.png",
-  "Nate.avif",
-  "Suhate.jpg",
+  "Rho.webp",
+  "Naninna-uwu.webp",
+  "Alice-uwu.webp",
+  "Alice.webp",
+  "farah.webp",
+  "Farah-uwu.webp",
+  "Liga-uwu.webp",
+  "Vanaric-uwu.webp",
+  "Fei-uwu.webp",
+  "Tuwu-uwu.webp",
+  "Touge-uwu.webp",
+  "Josh (1).webp",
+  "JG-uwu.webp",
+  "Vixpora.webp",
+  "Imp-uwu.webp",
+  "Adam-uwu.webp",
+  "Liga.webp",
+  "Touge.webp",
+  "Shin (1)-uwu.webp",
+  "Palis.webp",
+  "Imp.webp",
+  "JG.webp",
+  "Nate-uwu.webp",
+  "Suhate.webp",
   "Neetori.jpeg",
-  "Tuwu.jpg",
-  "Cloudy.jpg",
-  "Vanaric.png",
-  "Fei.jpg",
-  "Vixpora.avif",
-  "Pawwao.png",
-  "Adam.png",
-  "Nate.jpg",
-  "Rho.avif",
-  "Naninna.jpg",
-  "Shiomu.avif",
-  "Pawwao.avif",
-  "Josh.jpg",
-  "Jess (1).jpg",
-  "shiomu.png",
-  "stuwu.avif",
-  "Suhate.avif",
-  "stuwu.png",
-  "Jess.jpg",
-  "Cloudy.avif",
-  "Benangbaja.avif",
-  "Benanbaja.jpg",
-  "Shin.avif",
-  "Palis.avif",
-  "Neetori.avif",
+  "Tuwu.webp",
+  "Cloudy.webp",
+  "Vanaric.webp",
+  "Fei.webp",
+  "Vixpora-uwu.webp",
+  "Pawwao.webp",
+  "Adam.webp",
+  "Nate.webp",
+  "Rho-uwu.webp",
+  "Naninna.webp",
+  "Shiomu-uwu.webp",
+  "Pawwao-uwu.webp",
+  "Josh.webp",
+  "Jess (1).webp",
+  "shiomu.webp",
+  "stuwu-uwu.webp",
+  "Suhate-uwu.webp",
+  "stuwu.webp",
+  "Jess.webp",
+  "Cloudy-uwu.webp",
+  "Benangbaja-uwu.webp",
+  "Benanbaja.webp",
+  "Shin-uwu.webp",
+  "Palis-uwu.webp",
+  "Neetori-uwu.webp",
 ];
 
 interface UwuType {
@@ -315,7 +315,7 @@ const Community = () => {
             Be part of the community
           </div>
           <Button
-            link={DISCORD_LINK}
+            outLink={DISCORD_LINK}
             label="Join our Discord!"
             icon={whiteDiscord}
           />
