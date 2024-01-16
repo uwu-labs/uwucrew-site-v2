@@ -3687,7 +3687,7 @@ const derivatives: DerivativeType[] = [
 		image: 'https://pbs.twimg.com/media/FXI7rWxVUAACaqG?format=jpg&name=medium',
 		post: 'https://twitter.com/RhoXifer/status/1545364790935109632',
 		date: '7/8/2022'
-	// },
+	},
 	// {
 	// 	artistName: 'shinjurou',
 	// 	artistLink: 'https://twitter.com/shinjuroueth',
