@@ -144,13 +144,16 @@
 }
 
 .why-image-container {
+  display: none;
   position: relative;
   display: none;
   width: 100%;
   border-radius: 2.4rem;
   max-height: 40rem;
+}
 
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
+  .why-image-container {
     display: block;
   }
 }
@@ -162,12 +165,6 @@
   min-height: 10rem;
   object-fit: cover;
   object-position: top;
-}
-
-@media (max-width: 900px) {
-  .why-image {
-    display: block;
-  }
 }
 
 .why-image-credit {
