@@ -25,6 +25,7 @@ const Why = () => {
             <img
               src={uwu1}
               alt="uwu"
+              loading="eager"
               className={`why-fixed-image ${image == 0 ? "why-active" : ""}`}
             />
             <img
@@ -50,7 +51,7 @@ const Why = () => {
         <div className="why-content">
           <h1 className="why-header">Why uwucrew?!</h1>
           <div className="why-image-container">
-            <img className="why-image" src={uwu1} alt="uwu" />
+            <img className="why-image" src={uwu1} alt="uwu" loading="eager" />
             <a 
               href={`https://twitter.com/${imageCredits[0]}`} 
               target="_blank" 

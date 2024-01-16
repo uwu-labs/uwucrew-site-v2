@@ -77,11 +77,12 @@
 .socials-text {
   font-size: 2rem;
   font-weight: 700;
+  margin-right: 0.5rem;
   color: var(--sub);
 }
 
 .social {
-  margin-left: 1rem;
+  margin: 0.5rem;
   height: 1.8rem;
   width: 2rem;
   transition: transform 0.3s ease-in-out;
