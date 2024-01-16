@@ -42,7 +42,7 @@ const Derivatives = () => {
                 ...new Set(
                   derivatives
                     .filter((derivative) => Boolean(derivative.artistName))
-                    .map((derivative) => derivative.artistName || "")
+                    .map((derivative) => derivative.artistName.toLowerCase() || "")
                 ),
               ]
                 .sort((a, b) => a.localeCompare(b))
