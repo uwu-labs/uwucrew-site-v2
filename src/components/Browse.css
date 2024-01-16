@@ -91,3 +91,21 @@
     transform-origin: top center;
   }
 }
+
+.browse-image-credit {
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0.25rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  transform: translateY(0);
+}

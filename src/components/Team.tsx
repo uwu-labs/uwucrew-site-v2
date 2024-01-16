@@ -19,7 +19,7 @@ import morelloDeriv from "../assets/team/derivatives/morello.png";
 import chaseDeriv from "../assets/team/derivatives/chase.png";
 import omarDeriv from "../assets/team/derivatives/omar.png";
 import dannyDeriv from "../assets/team/derivatives/danny.png";
-// import ninesDeriv from "../assets/team/derivatives/danny.png";
+import ninesDeriv from "../assets/team/derivatives/nines.png";
 import julesDeriv from "../assets/team/derivatives/jules.png";
 import catinkleinsDeriv from "../assets/team/derivatives/catinkleins.png";
 
@@ -89,6 +89,8 @@ const members: TeamMemberType[] = [
     role: "designer",
     image: nines,
     twitter: "https://twitter.com/nine__s",
+    deriv: ninesDeriv,
+    derivArtist: "@BlancPixels"
   },
   {
     name: "Jules",

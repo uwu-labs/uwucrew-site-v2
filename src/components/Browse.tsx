@@ -14,6 +14,58 @@ interface UwuType {
   over: boolean;
 }
 
+const artists: string[] = [
+  "@Noname_Naname_", 
+  "@sornjaa",
+  "@0xWISHarie",
+  "@ssm_a_u",
+  "@garridspen",
+  "@wakamepiza",
+  "@thx_r308",
+  "@sawawse",
+  "@yowayowaxx",
+  "@SugarBee_nft",
+  "@seradoar",
+  "@KRY_Peach",
+  "@tsuru_oden",
+  "@KRY_Peach",
+  "@sawawse",
+  "@_nnwnoiros",
+  "@sawawse",
+  "@ppraewithme",
+  "@_KucingKecil_",
+  "@RollyChanArt",
+  "@sai7",
+  "@AoyaNFT",
+  "@sooon_TD",
+  "@nft_ryo",
+  "@tonakai_art",
+  "@heichanart",
+  "@Seekgoliath",
+  "@NaninnaTH",
+  "@HoshiShan",
+  "@benangbaja",
+  "@1JO_0",
+  "@ninegiri_",
+  "@sai7",
+  "@BlancPixels",
+  "@smolmeiji",
+  "@SWHEATZ1",
+  "@helena_mizu",
+  "@karindrops_nft",
+  "@cryingqiqi",
+  "@x_arisse",
+  "@ArtgifB",
+  "@jamesmakan",
+  "@cryingqiqi",
+  "@RhoXifer",
+  "@tonakai_art",
+  "@ruriNFT",
+  "@Yun_Aria55",
+  "@sai7",
+  "@hyow00",
+];
+
 const uwus: UwuType[] = [
   {
     width: 25,
@@ -101,9 +153,8 @@ const Browse = () => {
                 transform: `translateY(${-translateY}px)`,
                 zIndex,
               };
-              const image = `/assets/browse/${
-                ((index + offset) % UWU_OPTIONS) + 1
-              }.jpg`;
+              const uwuIndex = ((index + offset) % UWU_OPTIONS) + 1;
+              const image = `/assets/browse/${uwuIndex}.jpg`;
               return (
                 <div
                   key={index}
@@ -111,6 +162,7 @@ const Browse = () => {
                   style={style}
                 >
                   <img className="browse-image" src={image} alt="uwu" />
+                  <div className="browse-image-credit">{artists[uwuIndex-1]}</div>
                 </div>
               );
             })

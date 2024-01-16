@@ -6336,14 +6336,6 @@ const derivatives: DerivativeType[] = [
 		id: 1204
 	},
 	{
-		artistName: "Mirma",
-		artistLink: "https://twitter.com/seradoar",
-		image: "https://pbs.twimg.com/media/Fvid3PXXoAEqI9T?format=jpg&name=large",
-		post: "https://twitter.com/seradoar/status/1655246703824453634?s=20",
-		date: "5/7/2023",
-		id: 782
-	},
-	{
 		artistName: "HTT",
 		artistLink: "https://twitter.com/httsk8t",
 		image: "https://pbs.twimg.com/media/FvvevWdaIAExZ3V?format=jpg&name=medium",
