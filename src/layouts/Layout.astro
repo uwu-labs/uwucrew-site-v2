@@ -30,31 +30,18 @@ const { title } = Astro.props;
     <link rel="stylesheet" href="https://use.typekit.net/zgg7qni.css" />
 
     <!-- SEO -->
-    <title>{title}</title>
-    <meta
-      name="description"
-      content="Welcome to uwucrew: immerse yourself into the future of anime art!"
-    />
-
     <SEOMetadata
       siteName={'uwucrew'}
       title={'Welcome to uwucrew!'}
-      description={'Immerse yourself into the future of anime art ✨'}
-      image={'https://uwucrew-v2.web.app/og-image.jpg'}
-      favicon={'/icon.svg'}
+      description={'Immerse yourself into the future of anime art ✨\nBecome part of a global effort that empowers anime artists and fans in innovative ways 😎'}
+      image={'og-image.jpg'}
+      favicon={'/favicon.ico'}
       author="uwucrew"
       astroSitemap={true}
       canonicalUrl={Astro.url.toString()}
       type={'website'}
       astroGenerator={true}
     />
-
-    <!-- Socials -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@uwucrewnft" />
-    <meta name="twitter:title" content="uwucrew: immerse yourself into the future of anime art! ✨" />
-    <meta name="twitter:image" content="https://uwucrew-v2.web.app/og-image.jpg" />
-    <meta property="og:image" content="https://uwucrew-v2.web.app/og-image.jpg" />
   </head>
   <body>
     <slot />
