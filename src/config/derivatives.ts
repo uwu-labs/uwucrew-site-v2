@@ -24,7 +24,7 @@ const derivatives: DerivativeType[] = [
 		image: 'https://pbs.twimg.com/media/FFiqAqQaQAEjHor?format=jpg&name=large',
 		id: 5013,
 		post: 'https://twitter.com/tue_art/status/1466109145120067588',
-		artistName: 'TUE ART',
+		artistName: 'TUE',
 		artistLink: 'https://twitter.com/tue_art'
 	},
 	{
@@ -66,7 +66,7 @@ const derivatives: DerivativeType[] = [
 		image: 'https://pbs.twimg.com/media/FFpwiYBVgAEq5X7?format=jpg&name=large',
 		id: 6795,
 		post: 'https://twitter.com/tsukota888/status/1466608367770935296',
-		artistName: 'ã´ãªã¤ã“ãŸ',
+		artistName: 'tsukota888',
 		artistLink: 'https://twitter.com/tsukota888'
 	},
 	{
@@ -80,14 +80,14 @@ const derivatives: DerivativeType[] = [
 		image: 'https://pbs.twimg.com/media/FFlSLHFaMAEV4CE?format=jpg&name=large',
 		id: 27,
 		post: 'https://twitter.com/tue_art/status/1466294330105098246',
-		artistName: 'TUE ART',
+		artistName: 'TUE',
 		artistLink: 'https://twitter.com/tue_art'
 	},
 	{
 		image: 'https://pbs.twimg.com/media/FFmlUEwagAEP0jw?format=jpg&name=large',
 		id: 3976,
 		post: 'https://twitter.com/tue_art/status/1466385169623908353',
-		artistName: 'TUE ART',
+		artistName: 'TUE',
 		artistLink: 'https://twitter.com/tue_art'
 	},
 	{
@@ -122,7 +122,7 @@ const derivatives: DerivativeType[] = [
 		image: 'https://pbs.twimg.com/media/FFc7tLgaIAALABE?format=jpg&name=large',
 		id: 6386,
 		post: 'https://twitter.com/tue_art/status/1465706316786110472',
-		artistName: 'TUE ART',
+		artistName: 'TUE',
 		artistLink: 'https://twitter.com/tue_art'
 	},
 	{
@@ -696,7 +696,7 @@ const derivatives: DerivativeType[] = [
 		image: 'https://pbs.twimg.com/media/FGbmKlbWUAY_D7c?format=jpg&name=large',
 		id: 5013,
 		post: 'https://twitter.com/AyayaHagen/status/1470115543218806787?s=20',
-		artistName: 'TUE ART',
+		artistName: 'TUE',
 		artistLink: 'https://twitter.com/tue_art'
 	},
 	{
@@ -4879,7 +4879,7 @@ const derivatives: DerivativeType[] = [
 		id: 4542
 	},
 	{
-		artistName: '@TAB_head',
+		artistName: 'TAB_head',
 		artistLink: 'https://twitter.com/TAB_head',
 		image: 'https://pbs.twimg.com/media/FkXh-eQWIAgiSfX?format=jpg&name=900x900',
 		post: 'https://twitter.com/morellostorment/status/1604937317252497408',
@@ -4895,7 +4895,7 @@ const derivatives: DerivativeType[] = [
 		id: 1792
 	},
 	{
-		artistName: '❖波芝 みばる❖',
+		artistName: 'hasibasann',
 		artistLink: 'https://twitter.com/hasibasann',
 		image: 'https://pbs.twimg.com/media/FklPbcXUAAE-hJe?format=jpg&name=large',
 		post: 'https://twitter.com/hasibasann/status/1605902083231690753',
