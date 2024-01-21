@@ -6893,8 +6893,7 @@ const derivatives: DerivativeType[] = [
 		artistLink: "https://twitter.com/antony_nft",
 		image: "https://pbs.twimg.com/media/F59msxhagAA7Wja?format=jpg&name=900x900",
 		post: "https://twitter.com/antony_nft/status/1702192109678465325",
-		date: "9/14/23",
-		id: 4542
+		date: "9/14/23"
 	},
 	{
 		artistName: "B Son",
