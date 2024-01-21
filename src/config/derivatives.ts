@@ -21,3 +21,5 @@ export interface DerivativeType {
 	id?: number;
 	date?: string;
 }
+// Export the JSON data
+export default derivatives;
