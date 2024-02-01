@@ -16,7 +16,7 @@ const Derivatives = () => {
   const filtered = derivatives
     .filter(
       (derivative: DerivativeType) =>
-        !artist || derivative.artistName === artist
+        !artist || derivative.artistName.toLowerCase() === artist
     )
     .filter(
       (derivative: DerivativeType) =>
@@ -33,7 +33,7 @@ const Derivatives = () => {
           <div className="derivatives-filter">
             <select
               className="derivatives-dropdown"
-              onChange={(e) => setArtist(e.target.value)}
+              onChange={(e) => setArtist(e.target.value.toLowerCase())}
             >
               <option className="derivatives-option" value="">
                 All
