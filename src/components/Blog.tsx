@@ -26,10 +26,10 @@ const blogPosts: BlogPostType[] = [
   },
   {
     image: blog3,
-    date: "MAY 28, 2022",
-    title: "Artist Megacollab: Systema Solaris",
+    date: "FEB 29, 2024",
+    title: "Dressing Room: Customize your uwus!",
     description:
-      "Systema Solaris was our 1st Artist Megacollab, where 9 Solar System themed pieces from 9 different artists were auctioned off on Foundation!",
+      "The Dressing Room lets you customize your uwucrew with brand new items to look the way you want! We launched it on March 2022, and have provided all kinds of seasonal outfits and accessories free for all holders to enjoy!",
     mirrorId: "_R5xzweyufF3uUaFeTUr_vgmIJ--XPvaKNWA2ajUmXg",
   },
   {
