@@ -22,7 +22,7 @@ const blogPosts: BlogPostType[] = [
     title: "Dressing Room: Customize your uwus!",
     description:
       "The Dressing Room lets you customize your uwucrew for free with brand new items to look the way you want!",
-    mirrorId: "_R5xzweyufF3uUaFeTUr_vgmIJ--XPvaKNWA2ajUmXg",
+    mirrorId: "gVmozjKAQ6Wi4MAdhbl2bpShTvYVOF3bJA9_s_Bcs_U",
   },
   {
     image: blog1,
