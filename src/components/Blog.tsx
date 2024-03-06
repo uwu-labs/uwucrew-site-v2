@@ -17,20 +17,20 @@ interface BlogPostType {
 
 const blogPosts: BlogPostType[] = [
   {
+    image: blog3,
+    date: "MAR 6, 2024",
+    title: "Dressing Room: Customize your uwus!",
+    description:
+      "The Dressing Room lets you customize your uwucrew with brand new items to look the way you want! We launched it on March 2022, and have provided all kinds of seasonal outfits and accessories free for all holders to enjoy!",
+    mirrorId: "_R5xzweyufF3uUaFeTUr_vgmIJ--XPvaKNWA2ajUmXg",
+  },
+  {
     image: blog1,
     date: "JAN 15, 2023",
     title: "IROIRO: an uwu Labs Family project",
     description:
       "IROIRO is the 5th project to be part of the uwu Labs Family! We're incredibly excited to work with their founding company CyberZ and Sashimi as their artist!",
     mirrorId: "_vFRUoPS6eeV3vpRYyjdYcqW6ZGkGTaCWItxQevt_Lw",
-  },
-  {
-    image: blog3,
-    date: "FEB 29, 2024",
-    title: "Dressing Room: Customize your uwus!",
-    description:
-      "The Dressing Room lets you customize your uwucrew with brand new items to look the way you want! We launched it on March 2022, and have provided all kinds of seasonal outfits and accessories free for all holders to enjoy!",
-    mirrorId: "_R5xzweyufF3uUaFeTUr_vgmIJ--XPvaKNWA2ajUmXg",
   },
   {
     image: blog6,
