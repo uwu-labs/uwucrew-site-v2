@@ -23,7 +23,7 @@ const navItems: NavItemType[] = [
     href: "https://dressingroom.uwucrew.art/",
   },
   {
-    label: "uwu Music Playlist",
+    label: "music Playlist",
     href: "https://open.spotify.com/playlist/7eAZ2LooF82tFTJXGmBMkM",
   },
 ];
