@@ -6,7 +6,6 @@ import laur from "../assets/team/laur.webp";
 import kiwi from "../assets/team/kiwi.webp";
 import morello from "../assets/team/morello.webp";
 import chase from "../assets/team/chase.webp";
-import omar from "../assets/team/omar.webp";
 import danny from "../assets/team/danny.webp";
 import nines from "../assets/team/nines.webp";
 import jules from "../assets/team/jules.webp";
@@ -66,15 +65,6 @@ const members: TeamMemberType[] = [
     foundation: "https://foundation.app/@0xMaple",
     deriv: dannyDeriv,
     derivArtist: "@lightenbee",
-  },
-  {
-    name: "Omar",
-    role: "Community",
-    image: omar,
-    twitter: "https://twitter.com/OmarIbisa",
-    foundation: "https://foundation.app/@omr",
-    deriv: omarDeriv,
-    derivArtist: "@rakugaki_choo",
   },
   {
     name: "Morello",
