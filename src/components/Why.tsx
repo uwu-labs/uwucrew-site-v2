@@ -61,10 +61,10 @@ const Why = () => {
               {imageCredits[0]}
             </a>
           </div>
-          <h2 className="why-sub-header">Uniting the world, through art 🌏</h2>
+          <h2 className="why-sub-header">Uniting the world with art 🌏</h2>
           <p className="why-text">
-            Fall down a rabbit hole of creativity and be part of our global
-            community, including over 250+ anime artists!
+            Fall down a rabbit hole of creativity and join the Kusari
+            community, home to over 250+ global anime artists!
           </p>
           <div className="why-image-container">
             <img className="why-image" src={uwu2} alt="uwu" loading="eager" />
@@ -78,10 +78,10 @@ const Why = () => {
             </a>
           </div>
           <h2 className="why-mid-sub-header">
-            Join The Anime Art Revolution! 🚀
+            Revolutionizing anime art 🚀
           </h2>
           <p className="why-text">
-            Participate in the anime wave that's defining our generation! Lets
+            Participate in the anime wave that's shaking the world! Lets
             create a culture that values creativity, together~
           </p>
           <div className="why-image-container">
@@ -97,8 +97,7 @@ const Why = () => {
           </div>
           <h2 className="why-mid-sub-header">Enter... the uwuminati 😎</h2>
           <p className="why-text">
-            Discover a crew of like-minded people inspired by anime and building
-            their own digital art collection!
+            Discover a crew of like-minded people who love onchain art and discover global artists together.
           </p>
           <div className="why-buffer" />
         </div>

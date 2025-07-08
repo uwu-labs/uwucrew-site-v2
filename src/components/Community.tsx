@@ -312,7 +312,7 @@ const Community = () => {
             className="community-content-image"
           />
           <div className="community-content-header">
-            Be part of the community
+            Join the Kusari Community
           </div>
           <Button
             outLink={DISCORD_LINK}
