@@ -1,25 +1,20 @@
 import "./Community.css";
 import Section from "./Section";
 
-import logo from "../assets/bunnyPrimary.webp";
+import logo from "../assets/kusariPrimaryWhite.webp";
 import Button from "./Button";
 import {
   DISCORD_LINK,
-  ETHERSCAN_LINK,
-  INSTAGRAM_LINK,
-  MEDIUM_LINK,
-  OPENSEA_LINK,
-  TWITTER_LINK,
+  KUSARI_INSTAGRAM_LINK,
+  KUSARI_TWITTER_LINK,
 } from "../app/globals";
 
-import discord from "../assets/socials/footer/discord.svg";
-import etherscan from "../assets/socials/footer/etherscan.svg";
 import instagram from "../assets/socials/footer/instagram.svg";
-import medium from "../assets/socials/footer/medium.svg";
-import opensea from "../assets/socials/footer/opensea.svg";
 import twitter from "../assets/socials/footer/twitter.svg";
+import globe from "../assets/socials/globe.svg";
 
 import whiteDiscord from "../assets/socials/discord.svg";
+import farcaster from "../assets/socials/farcaster.svg";
 
 import { useEffect, useState } from "react";
 
@@ -48,7 +43,6 @@ const imageOptions = [
   "JG.webp",
   "Nate-uwu.webp",
   "Suhate.webp",
-  "Neetori.jpeg",
   "Tuwu.webp",
   "Cloudy.webp",
   "Vanaric.webp",
@@ -146,34 +140,24 @@ interface SocialType {
 
 const socials: SocialType[] = [
   {
-    name: "Discord",
-    link: DISCORD_LINK,
-    icon: discord,
+    name: "Kusari Website",
+    link: "https://kusari.org",
+    icon: globe,
   },
   {
     name: "Twitter",
-    link: TWITTER_LINK,
+    link: KUSARI_TWITTER_LINK,
     icon: twitter,
   },
   {
+    name: "Farcaster",
+    link: "https://farcaster.xyz/bykusari",
+    icon: farcaster,
+  },
+  {
     name: "Instagram",
-    link: INSTAGRAM_LINK,
+    link: KUSARI_INSTAGRAM_LINK,
     icon: instagram,
-  },
-  {
-    name: "Etherscan",
-    link: ETHERSCAN_LINK,
-    icon: etherscan,
-  },
-  {
-    name: "Medium",
-    link: MEDIUM_LINK,
-    icon: medium,
-  },
-  {
-    name: "OpenSea",
-    link: OPENSEA_LINK,
-    icon: opensea,
   },
 ];
 
@@ -308,22 +292,18 @@ const Community = () => {
         <div className="community-content">
           <img
             src={logo}
-            alt="uwucrew icon"
+            alt="kusari icon"
             className="community-content-image"
           />
           <div className="community-content-header">
-            Be part of the community
+            Discover the Kusari Community
           </div>
           <Button
             outLink={DISCORD_LINK}
             label="Join our Discord!"
             icon={whiteDiscord}
           />
-        </div>
-
-        {/* Footer */}
-        <div className="community-footer">
-          <div className="community-footer-socials">
+          <div style={{ marginTop: '2.2rem' }} className="community-footer-socials">
             {socials.map((social) => (
               <a
                 key={social.name}
@@ -335,12 +315,20 @@ const Community = () => {
                 <img
                   src={social.icon}
                   alt={social.name}
-                  className="community-footer-social-image"
+                  className={
+                    social.name === "Kusari Website"
+                      ? "community-footer-social-image white-icon globe-icon"
+                      : "community-footer-social-image white-icon"
+                  }
+                  style={social.name === "Kusari Website" ? { width: '2.2rem', height: '2.2rem' } : {}}
                 />
               </a>
             ))}
           </div>
         </div>
+
+        {/* Footer */}
+        <div className="community-footer" />
       </div>
     </Section>
   );
