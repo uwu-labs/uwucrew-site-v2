@@ -10,8 +10,10 @@ export const ADDRESS = "0xf75140376d246d8b1e5b8a48e3f00772468b3c0c";
 
 // Links
 export const TWITTER_LINK = "https://twitter.com/uwucrewnft";
+export const KUSARI_TWITTER_LINK = "https://twitter.com/bykusari";
 export const DISCORD_LINK = "https://discord.gg/cKWpT7HGam";
 export const INSTAGRAM_LINK = "https://www.instagram.com/uwucrew.art/";
+export const KUSARI_INSTAGRAM_LINK = "https://www.instagram.com/bykusari/";
 export const MEDIUM_LINK = "https://mirror.xyz/uwucrew.eth";
 export const ETHERSCAN_LINK = `https://etherscan.io/address/${ADDRESS}`;
 export const OPENSEA_LINK = "https://opensea.io/collection/uwucrew";
