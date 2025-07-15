@@ -43,7 +43,6 @@ const imageOptions = [
   "JG.webp",
   "Nate-uwu.webp",
   "Suhate.webp",
-  "Neetori.jpeg",
   "Tuwu.webp",
   "Cloudy.webp",
   "Vanaric.webp",
