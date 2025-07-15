@@ -5,20 +5,11 @@ import logo from "../assets/kusariPrimaryWhite.webp";
 import Button from "./Button";
 import {
   DISCORD_LINK,
-  ETHERSCAN_LINK,
-  INSTAGRAM_LINK,
   KUSARI_INSTAGRAM_LINK,
   KUSARI_TWITTER_LINK,
-  MEDIUM_LINK,
-  OPENSEA_LINK,
-  TWITTER_LINK,
 } from "../app/globals";
 
-import discord from "../assets/socials/footer/discord.svg";
-import etherscan from "../assets/socials/footer/etherscan.svg";
 import instagram from "../assets/socials/footer/instagram.svg";
-import medium from "../assets/socials/footer/medium.svg";
-import opensea from "../assets/socials/footer/opensea.svg";
 import twitter from "../assets/socials/footer/twitter.svg";
 import globe from "../assets/socials/globe.svg";
 
