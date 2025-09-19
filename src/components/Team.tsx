@@ -40,8 +40,16 @@ interface TeamMemberType {
 
 const members: TeamMemberType[] = [
   {
+    name: "Laur",
+    role: "Artist",
+    image: laur,
+    twitter: "https://twitter.com/fungibleartist",
+    foundation: "https://foundation.app/@laur",
+    deriv: laurDeriv,
+    derivArtist: "@onigiriman1998",
+  },  {
     name: "Kiwi",
-    role: "team leader",
+    role: "Developer",
     image: kiwi,
     twitter: "https://twitter.com/0xKiwi_",
     foundation: "https://foundation.app/@Kiwi",
@@ -49,73 +57,13 @@ const members: TeamMemberType[] = [
     derivArtist: "@_NaokiSaito",
   },
   {
-    name: "Laur",
-    role: "lead artist",
-    image: laur,
-    twitter: "https://twitter.com/fungibleartist",
-    foundation: "https://foundation.app/@laur",
-    deriv: laurDeriv,
-    derivArtist: "@onigiriman1998",
-  },
-  {
-    name: "Danny",
-    role: "operations",
-    image: danny,
-    twitter: "https://twitter.com/0xMaple",
-    foundation: "https://foundation.app/@0xMaple",
-    deriv: dannyDeriv,
-    derivArtist: "@lightenbee",
-  },
-  {
     name: "Morello",
-    role: "Advisor",
+    role: "Helper",
     image: morello,
     twitter: "https://twitter.com/morellostorment",
     foundation: "https://foundation.app/@morello",
     deriv: morelloDeriv,
     derivArtist: "@tsukota888",
-  },
-  {
-    name: "Nines",
-    role: "designer",
-    image: nines,
-    twitter: "https://twitter.com/nine__s",
-    deriv: ninesDeriv,
-    derivArtist: "@BlancPixels"
-  },
-  {
-    name: "Jules",
-    role: "illustrator",
-    image: jules,
-    twitter: "https://twitter.com/BlancPixels",
-    foundation: "https://foundation.app/@jujulesblanc",
-    deriv: julesDeriv,
-    derivArtist: "@BlancPixels",
-  },
-  {
-    name: "Cucurbit",
-    role: "Web Dev",
-    image: cucurbit,
-    twitter: "https://twitter.com/PiperCucu",
-    foundation: "https://foundation.app/@milky.eth",
-    deriv: cucuDeriv,
-    derivArtist: "@hj_36_"
-  },
-  {
-    name: "CatInKleins",
-    role: "Solidity Dev",
-    image: catinkleins,
-    twitter: "https://twitter.com/CatInKleins",
-    deriv: catinkleinsDeriv,
-    derivArtist: "@Jack0ftrades0_0",
-  },
-  {
-    name: "Chase",
-    role: "web Dev",
-    image: chase,
-    twitter: "https://twitter.com/chase_manning_",
-    deriv: chaseDeriv,
-    derivArtist: "@shinjuroueth",
   },
 ];
 
@@ -173,7 +121,7 @@ const Team = () => {
   return (
     <Section id="team">
       <div className="team" ref={sectionRef}>
-        <h2 className="team-header">our team</h2>
+        <h2 className="team-header">Co-founders</h2>
         <div className="team-members">
           {members.map((member, index) => {
             return (
