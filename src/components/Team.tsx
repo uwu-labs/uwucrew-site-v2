@@ -58,7 +58,7 @@ const members: TeamMemberType[] = [
   },
   {
     name: "Morello",
-    role: "Helper",
+    role: "Advisor",
     image: morello,
     twitter: "https://twitter.com/morellostorment",
     foundation: "https://foundation.app/@morello",
