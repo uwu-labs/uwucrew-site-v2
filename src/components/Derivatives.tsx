@@ -42,12 +42,12 @@ const Derivatives = () => {
                 ...new Set(
                   derivatives
                     .filter((derivative) => Boolean(derivative.artistName))
-                    .map((derivative) => derivative.artistName.toLowerCase() || "")
+                    .map((derivative) => derivative.artistName || "")
                 ),
               ]
                 .sort((a, b) => a.localeCompare(b))
                 .map((artistName, index) => (
-                  <option className="derivatives-option" key={index}>
+                  <option className="derivatives-option" key={index} value={artistName.toLowerCase()}>
                     {artistName}
                   </option>
                 ))}

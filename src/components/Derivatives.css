@@ -109,6 +109,7 @@
   cursor: pointer;
   outline: none;
   width: 100%;
+  text-transform: none !important;
 }
 
 .derivatives-dropdown:hover,
@@ -118,6 +119,11 @@
 
 .derivatives-option {
   font-size: 2rem;
+  text-transform: none !important;
+}
+
+.derivatives-dropdown option {
+  text-transform: none !important;
 }
 
 .derivatives-input {
