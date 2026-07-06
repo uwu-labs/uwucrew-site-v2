@@ -6,6 +6,8 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+
+const ogImage = new URL("/og-image.png", Astro.site).toString();
 ---
 
 <!DOCTYPE html>
@@ -52,14 +54,12 @@ const { title } = Astro.props;
       />
     </noscript>
 
-    <title>uwucrew! by Kusari</title>
-
     <!-- SEO -->
     <SEOMetadata
       siteName={'uwucrew by Kusari'}
-      title={'Welcome to uwucrew by Kusari'}
+      title={title}
       description={'Immerse yourself into the future of anime art ✨ Join the Kusari Family and let\'s empower creativity together 🎨🌈 Connect with others inspired by anime!'}
-      image={'/og-image.png'}
+      image={ogImage}
       favicon={'/favicon.ico'}
       author="uwucrew"
       astroSitemap={true}
@@ -67,11 +67,6 @@ const { title } = Astro.props;
       type={'website'}
       astroGenerator={true}
     />
-
-    <meta property="og:title" content="Welcome to uwucrew by Kusari!" />
-    <meta property="og:description" content="Immerse yourself into the future of anime art ✨ Join the Kusari Family and lets empower creativity together 🎨🌈" />
-    <meta property="og:image" content={Astro.url.toString() + "og-image.png"} />
-    <meta property="og:url" content={Astro.url.toString()} />
   </head>
   <body>
     <slot />
