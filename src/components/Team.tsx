@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Section from "./Section";
 import "./Team.css";
+import assetUrl from "../utils/assetUrl";
 
 import laur from "../assets/team/laur.webp";
 import kiwi from "../assets/team/kiwi.webp";
@@ -42,27 +43,27 @@ const members: TeamMemberType[] = [
   {
     name: "Laur",
     role: "Artist",
-    image: laur,
+    image: assetUrl(laur),
     twitter: "https://twitter.com/fungibleartist",
     foundation: "https://foundation.app/@laur",
-    deriv: laurDeriv,
+    deriv: assetUrl(laurDeriv),
     derivArtist: "@onigiriman1998",
   },  {
     name: "Kiwi",
     role: "Developer",
-    image: kiwi,
+    image: assetUrl(kiwi),
     twitter: "https://twitter.com/0xKiwi_",
     foundation: "https://foundation.app/@Kiwi",
-    deriv: kiwiDeriv,
+    deriv: assetUrl(kiwiDeriv),
     derivArtist: "@_NaokiSaito",
   },
   {
     name: "Morello",
     role: "Advisor",
-    image: morello,
+    image: assetUrl(morello),
     twitter: "https://twitter.com/morellostorment",
     foundation: "https://foundation.app/@morello",
-    deriv: morelloDeriv,
+    deriv: assetUrl(morelloDeriv),
     derivArtist: "@tsukota888",
   },
 ];
@@ -165,7 +166,7 @@ const Team = () => {
                       className="team-member-social-link"
                     >
                       <img
-                        src={twitter}
+                        src={assetUrl(twitter)}
                         alt="twitter"
                         className="team-member-social-image"
                       />
@@ -179,7 +180,7 @@ const Team = () => {
                       className="team-member-social-link"
                     >
                       <img
-                        src={foundation}
+                        src={assetUrl(foundation)}
                         alt="foundation"
                         className="team-member-social-image"
                       />

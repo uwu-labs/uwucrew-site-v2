@@ -7,6 +7,7 @@ import hamburger from "../assets/ui/hamburger.svg";
 import Button from "./Button";
 import { OPENSEA_LINK } from "../app/globals";
 import { useState } from "react";
+import assetUrl from "../utils/assetUrl";
 
 interface NavItemType {
   label: string;
@@ -15,15 +16,15 @@ interface NavItemType {
 
 const navItems: NavItemType[] = [
   {
-    label: "Art Gallery",
+    label: "art gallery",
     href: "/gallery",
   },
   {
-    label: "Dressing Room",
+    label: "dressing room",
     href: "https://dressingroom.uwucrew.art/",
   },
   {
-    label: "music Playlist",
+    label: "music playlist",
     href: "https://open.spotify.com/playlist/7eAZ2LooF82tFTJXGmBMkM",
   },
 ];
@@ -35,7 +36,7 @@ const Header = () => {
     <div className="header">
       <div className="section">
         <a href="/">
-          <img className="logo" src={logo} alt="uwucrew logo"  loading="eager" />
+          <img className="logo" src={assetUrl(logo)} alt="uwucrew logo"  loading="eager" />
         </a>
         <div className="nav-items">
           {navItems.map((navItem) => (
@@ -46,7 +47,7 @@ const Header = () => {
         </div>
       </div>
       <div className="header-buy-on-opensea">
-        <Button label="Buy on OpenSea" outLink={OPENSEA_LINK} icon={opensea} />
+        <Button label="buy on opensea" outLink={OPENSEA_LINK} icon={opensea} />
       </div>
       <button
         className="header-hamburger"
@@ -55,7 +56,7 @@ const Header = () => {
         <img
           className="header-hamburger-icon"
           loading="eager"
-          src={hamburger}
+          src={assetUrl(hamburger)}
           alt="hamburger menu"
         />
       </button>
@@ -75,7 +76,7 @@ const Header = () => {
               ))}
               <div className="header-hamburger-button-container">
                 <Button
-                  label="Buy on OpenSea"
+                  label="buy on opensea"
                   outLink={OPENSEA_LINK}
                   icon={opensea}
                 />

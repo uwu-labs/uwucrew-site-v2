@@ -7,14 +7,16 @@ import {
   DISCORD_LINK,
   KUSARI_INSTAGRAM_LINK,
   KUSARI_TWITTER_LINK,
+  MEDIUM_LINK,
+  MINT_KUSARI_LINK,
 } from "../app/globals";
 
-import instagram from "../assets/socials/footer/instagram.svg";
-import twitter from "../assets/socials/footer/twitter.svg";
 import globe from "../assets/socials/globe.svg";
+import instagram from "../assets/socials/footer/instagram.svg";
+import medium from "../assets/socials/footer/medium.svg";
+import twitter from "../assets/socials/footer/twitter.svg";
 
 import whiteDiscord from "../assets/socials/discord.svg";
-import farcaster from "../assets/socials/farcaster.svg";
 
 import { useEffect, useState } from "react";
 
@@ -140,8 +142,8 @@ interface SocialType {
 
 const socials: SocialType[] = [
   {
-    name: "Kusari Website",
-    link: "https://kusari.org",
+    name: "Kusari website",
+    link: MINT_KUSARI_LINK,
     icon: globe,
   },
   {
@@ -150,9 +152,9 @@ const socials: SocialType[] = [
     icon: twitter,
   },
   {
-    name: "Farcaster",
-    link: "https://farcaster.xyz/bykusari",
-    icon: farcaster,
+    name: "Mirror",
+    link: MEDIUM_LINK,
+    icon: medium,
   },
   {
     name: "Instagram",
@@ -296,14 +298,26 @@ const Community = () => {
             className="community-content-image"
           />
           <div className="community-content-header">
-            Discover the Kusari Community
+            discover the kusari community
           </div>
-          <Button
-            outLink={DISCORD_LINK}
-            label="Join our Discord!"
-            icon={whiteDiscord}
-          />
-          <div style={{ marginTop: '2.2rem' }} className="community-footer-socials">
+          <div className="community-content-actions">
+            <Button
+              outLink={DISCORD_LINK}
+              label="join our discord!"
+              icon={whiteDiscord}
+            />
+          </div>
+          <p className="community-content-body">
+            uwucrew is part of the{" "}
+            <strong className="community-content-body-emphasis">
+              Kusari Family
+            </strong>{" "}
+            - a collective dedicated to using onchain technology to
+            collaborate with the global artist community.
+          </p>
+          <div
+            className="community-footer-socials community-content-socials"
+          >
             {socials.map((social) => (
               <a
                 key={social.name}
@@ -316,18 +330,24 @@ const Community = () => {
                   src={social.icon}
                   alt={social.name}
                   className={
-                    social.name === "Kusari Website"
-                      ? "community-footer-social-image white-icon globe-icon"
+                    social.name === "Kusari website"
+                      ? "community-footer-social-image white-icon community-footer-social-image--globe"
                       : "community-footer-social-image white-icon"
                   }
-                  style={social.name === "Kusari Website" ? { width: '2.2rem', height: '2.2rem' } : {}}
                 />
               </a>
             ))}
           </div>
         </div>
 
-        {/* Footer */}
+        <div className="community-footer-discord">
+          <Button
+            outLink={DISCORD_LINK}
+            label="join our discord!"
+            icon={whiteDiscord}
+          />
+        </div>
+
         <div className="community-footer" />
       </div>
     </Section>

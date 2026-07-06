@@ -5,20 +5,8 @@ import Why from "../components/Why";
 import Browse from "../components/Browse";
 import Team from "../components/Team";
 import Blog from "../components/Blog";
-import Community from "../components/Community";
+import Kusari from "../components/Kusari";
 ---
-
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-7M9FKP2465"></script>
-  <script type="text/partytown">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-7M9FKP2465');
-  </script>
-</head>
 
 <Layout title="uwucrew: the future of anime art ✨">
   <main>
@@ -27,7 +15,7 @@ import Community from "../components/Community";
     <Browse client:load />
     <Team client:idle />
     <Blog />
-    <Community client:idle />
+    <Kusari client:idle />
   </main>
 </Layout>
 

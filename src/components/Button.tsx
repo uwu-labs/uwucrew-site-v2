@@ -1,4 +1,5 @@
 import "./Button.css";
+import assetUrl from "../utils/assetUrl";
 
 interface Props {
   action?: () => void;
@@ -12,7 +13,7 @@ interface Props {
 const Button = ({ label, action, icon, link, outLink, primary }: Props) => {
   const content = (
     <>
-      {icon && <img className="icon" src={icon} alt={label} />}
+      {icon && <img className="icon" src={assetUrl(icon)} alt={label} />}
       <div className="label">{label}</div>
     </>
   );

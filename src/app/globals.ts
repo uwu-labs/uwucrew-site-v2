@@ -4,6 +4,7 @@ import instagramLogo from "../assets/socials/sub/instagram.svg";
 import openseaLogo from "../assets/socials/sub/opensea.svg";
 import mediumLogo from "../assets/socials/sub/medium.svg";
 import etherscanLogo from "../assets/socials/sub/etherscan.svg";
+import assetUrl from "../utils/assetUrl";
 
 // Constants
 export const ADDRESS = "0xf75140376d246d8b1e5b8a48e3f00772468b3c0c";
@@ -17,6 +18,8 @@ export const KUSARI_INSTAGRAM_LINK = "https://www.instagram.com/bykusari/";
 export const MEDIUM_LINK = "https://mirror.xyz/uwucrew.eth";
 export const ETHERSCAN_LINK = `https://etherscan.io/address/${ADDRESS}`;
 export const OPENSEA_LINK = "https://opensea.io/collection/uwucrew";
+/** Kusari mint / project home — update if the canonical mint URL changes */
+export const MINT_KUSARI_LINK = "https://kusari.org";
 export const MIRROR_LINK = "https://mirror.xyz/uwucrew.eth/";
 
 // Socials
@@ -29,26 +32,26 @@ export const SOCIALS: SocialType[] = [
   {
     name: "Twitter",
     url: TWITTER_LINK,
-    image: twitterLogo,
+    image: assetUrl(twitterLogo),
   },
   {
     name: "Instagram",
     url: INSTAGRAM_LINK,
-    image: instagramLogo,
+    image: assetUrl(instagramLogo),
   },
   {
     name: "Mirror",
     url: MEDIUM_LINK,
-    image: mediumLogo,
+    image: assetUrl(mediumLogo),
   },
   {
     name: "OpenSea",
     url: OPENSEA_LINK,
-    image: openseaLogo,
+    image: assetUrl(openseaLogo),
   },
   {
     name: "Etherscan",
     url: ETHERSCAN_LINK,
-    image: etherscanLogo,
+    image: assetUrl(etherscanLogo),
   },
 ];

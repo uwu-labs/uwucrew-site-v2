@@ -25,6 +25,9 @@ const DerivativeImage = ({ derivative }: Props) => {
         <img
           className="derivative-image-image"
           src={magicImageLinkTransform(derivative.image)}
+          alt={derivative.artistName ? `Derivative by ${derivative.artistName}` : "Derivative artwork"}
+          loading="lazy"
+          decoding="async"
         />
         <div className="derivative-image-overlay">
           <button

@@ -6,6 +6,7 @@ import blog3 from "../assets/blog/03.webp";
 import blog6 from "../assets/blog/06.webp";
 import Button from "./Button";
 import { MIRROR_LINK } from "../app/globals";
+import assetUrl from "../utils/assetUrl";
 
 interface BlogPostType {
   image: string;
@@ -17,7 +18,7 @@ interface BlogPostType {
 
 const blogPosts: BlogPostType[] = [
   {
-    image: blog3,
+    image: assetUrl(blog3),
     date: "MAR 6, 2024",
     title: "Dressing Room: Customize your uwus!",
     description:
@@ -25,7 +26,7 @@ const blogPosts: BlogPostType[] = [
     mirrorId: "gVmozjKAQ6Wi4MAdhbl2bpShTvYVOF3bJA9_s_Bcs_U",
   },
   {
-    image: blog1,
+    image: assetUrl(blog1),
     date: "JAN 15, 2023",
     title: "IROIRO: A family project",
     description:
@@ -33,7 +34,7 @@ const blogPosts: BlogPostType[] = [
     mirrorId: "_vFRUoPS6eeV3vpRYyjdYcqW6ZGkGTaCWItxQevt_Lw",
   },
   {
-    image: blog6,
+    image: assetUrl(blog6),
     date: "MAY 3, 2022",
     title: "The uwu Art License",
     description:
@@ -76,7 +77,7 @@ const Blog = () => {
         <Button
           primary
           outLink={MIRROR_LINK}
-          label="check out our blog!"
+          label="read our blog"
         />
       </div>
     </Section>
