@@ -4,7 +4,6 @@ import Section from "./Section";
 import blog3 from "../assets/blog/03.webp";
 import blog6 from "../assets/blog/06.webp";
 import kusariStamps from "../assets/blog/kusari-stamps.jpg";
-import Button from "./Button";
 import { MIRROR_LINK } from "../app/globals";
 import assetUrl from "../utils/assetUrl";
 
@@ -74,11 +73,6 @@ const Blog = () => {
             })
           }
         </div>
-        <Button
-          primary
-          outLink={MIRROR_LINK}
-          label="read our blog"
-        />
       </div>
     </Section>
   );

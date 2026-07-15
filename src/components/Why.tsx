@@ -64,8 +64,8 @@ const Why = () => {
           </div>
           <h2 className="why-sub-header">born from love 💖</h2>
           <p className="why-text">
-            uwucrew is the genesis onchain art collection of Kusari, funded by
-            people passionate about anime art
+            uwucrew is the genesis onchain art collection of Kusari, a digital home
+            for people passionate about anime art
           </p>
           <div className="why-image-container">
             <img className="why-image" src={assetUrl(uwu2)} alt="uwu" loading="eager" />
