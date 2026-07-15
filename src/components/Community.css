@@ -89,17 +89,90 @@
 .community-content-header {
   font-size: 8.8rem;
   font-weight: 800;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.4rem;
   width: 80rem;
   text-align: center;
   line-height: 100%;
   color: #ffffff;
+  text-transform: lowercase;
+}
+
+.community-content-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.community-content-actions--secondary {
+  margin-top: 2.4rem;
+  margin-bottom: 0;
+}
+
+.community-content-body {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.95);
+  text-transform: lowercase;
+}
+
+.community-content-body-emphasis {
+  font-weight: 800;
+  text-transform: none;
+}
+
+.community-content-socials {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  gap: 0.4rem;
+}
+
+.community-footer-discord {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 8rem;
+  z-index: 5;
+}
+
+@media (max-width: 900px) {
+  .community-footer-discord {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 2rem;
+  }
+}
+
+.community-footer-social-image--globe {
+  width: 2.6rem;
+  height: 2.6rem;
+  object-fit: contain;
+}
+
+.community-content-socials .community-footer-social-image {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.community-content-socials .community-footer-social-link + .community-footer-social-link {
+  margin-left: 1.2rem;
 }
 
 @media (max-width: 900px) {
   .community-content-header {
     font-size: 4.8rem;
     width: 100%;
+  }
+
+  .community-content-body {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    max-width: 100%;
   }
 }
 

@@ -1,4 +1,5 @@
 import "./HeroBanners.css";
+import assetUrl from "../utils/assetUrl";
 
 import uwu1 from "../assets/uwus/1.webp";
 import uwu2 from "../assets/uwus/2.webp";
@@ -94,7 +95,7 @@ const HeroBanners = () => {
         {[...top, ...top].map((uwu, index) => {
           return (
             <div className="uwu-container" key={index}>
-              <img src={uwu} alt="uwu" className="uwu" loading={index < 10 ? "eager" : "lazy"} />
+              <img src={assetUrl(uwu)} alt="uwu" className="uwu" loading={index < 10 ? "eager" : "lazy"} />
             </div>
           );
         })}
@@ -103,7 +104,7 @@ const HeroBanners = () => {
         {[...bottom, ...bottom].map((uwu, index) => {
           return (
             <div className="uwu-container" key={index}>
-              <img src={uwu} alt="uwu" className="uwu" loading={index < 10 ? "eager" : "lazy"} />
+              <img src={assetUrl(uwu)} alt="uwu" className="uwu" loading={index < 10 ? "eager" : "lazy"} />
             </div>
           );
         })}

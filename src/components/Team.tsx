@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Section from "./Section";
 import "./Team.css";
+import assetUrl from "../utils/assetUrl";
 
 import laur from "../assets/team/laur.webp";
 import kiwi from "../assets/team/kiwi.webp";
@@ -24,8 +25,6 @@ import cucuDeriv from "../assets/team/derivatives/cucu.webp";
 import catinkleinsDeriv from "../assets/team/derivatives/catinkleins.webp";
 
 import twitter from "../assets/socials/team/twitter.svg";
-import github from "../assets/socials/team/github.svg";
-import foundation from "../assets/socials/team/foundation.svg";
 
 interface TeamMemberType {
   name: string;
@@ -34,35 +33,30 @@ interface TeamMemberType {
   deriv?: string;
   derivArtist?: string;
   twitter?: string;
-  github?: string;
-  foundation?: string;
 }
 
 const members: TeamMemberType[] = [
   {
     name: "Laur",
     role: "Artist",
-    image: laur,
+    image: assetUrl(laur),
     twitter: "https://twitter.com/fungibleartist",
-    foundation: "https://foundation.app/@laur",
-    deriv: laurDeriv,
+    deriv: assetUrl(laurDeriv),
     derivArtist: "@onigiriman1998",
   },  {
     name: "Kiwi",
     role: "Developer",
-    image: kiwi,
+    image: assetUrl(kiwi),
     twitter: "https://twitter.com/0xKiwi_",
-    foundation: "https://foundation.app/@Kiwi",
-    deriv: kiwiDeriv,
+    deriv: assetUrl(kiwiDeriv),
     derivArtist: "@_NaokiSaito",
   },
   {
     name: "Morello",
     role: "Advisor",
-    image: morello,
+    image: assetUrl(morello),
     twitter: "https://twitter.com/morellostorment",
-    foundation: "https://foundation.app/@morello",
-    deriv: morelloDeriv,
+    deriv: assetUrl(morelloDeriv),
     derivArtist: "@tsukota888",
   },
 ];
@@ -73,7 +67,7 @@ const Team = () => {
   );
   const sectionRef = useRef(null);
 
-  const cascadeEffect = (targetState) => {
+  const cascadeEffect = (targetState: boolean) => {
     let delay = 0;
     hoverStatus.forEach((_, index) => {
       setTimeout(() => {
@@ -165,22 +159,8 @@ const Team = () => {
                       className="team-member-social-link"
                     >
                       <img
-                        src={twitter}
+                        src={assetUrl(twitter)}
                         alt="twitter"
-                        className="team-member-social-image"
-                      />
-                    </a>
-                  )}
-                  {member.foundation && (
-                    <a
-                      href={member.foundation}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="team-member-social-link"
-                    >
-                      <img
-                        src={foundation}
-                        alt="foundation"
                         className="team-member-social-image"
                       />
                     </a>

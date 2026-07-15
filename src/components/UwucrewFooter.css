@@ -1,0 +1,107 @@
+.uwucrew-footer {
+  width: 100%;
+  background: transparent;
+  padding: 2.4rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
+  margin-top: auto;
+  font-family: "como", sans-serif;
+  text-transform: lowercase;
+}
+
+@media only screen and (max-width: 750px) {
+  .uwucrew-footer {
+    padding: 1.6rem 1.6rem 2.4rem;
+  }
+}
+
+.uwucrew-footer-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .uwucrew-footer-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .uwucrew-footer-content {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+}
+
+.uwucrew-footer-logo {
+  height: 4.4rem;
+  max-width: min(52vw, 18rem);
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+@media only screen and (max-width: 420px) {
+  .uwucrew-footer-logo {
+    height: 4.8rem;
+    max-width: min(92vw, 34rem);
+  }
+}
+
+.uwucrew-footer-logo:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.uwucrew-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.uwucrew-footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+.uwucrew-footer-social-link:hover {
+  transform: translateY(-2px) scale(1.06);
+}
+
+.uwucrew-footer-social-link:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.uwucrew-footer-social-image {
+  width: 2.8rem;
+  height: 2.8rem;
+  opacity: 0.95;
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.uwucrew-footer-social-link:hover .uwucrew-footer-social-image {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+@media only screen and (max-width: 750px) {
+  .uwucrew-footer-social-image {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

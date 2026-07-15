@@ -137,7 +137,7 @@ const Browse = () => {
           <h2 className="browse-header">browse artists from all over the world</h2>
           <Button
             link="/gallery"
-            label="view the art gallery!"
+            label="view the gallery"
           />
           {
             // Render uwus
@@ -161,7 +161,13 @@ const Browse = () => {
                   className="browse-image-container"
                   style={style}
                 >
-                  <img className="browse-image" src={image} alt="uwu" />
+                  <img
+                    className="browse-image"
+                    src={image}
+                    alt="uwu"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <a 
                     href={`https://twitter.com/${artists[uwuIndex-1]}`}
                     target="_blank" 
